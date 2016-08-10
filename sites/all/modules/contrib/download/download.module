@@ -1,0 +1,298 @@
+<?php
+/**
+ * @file
+ *
+ * Handles module administration and download link
+ */
+
+
+/**
+ * Implements hook_menu().
+ */
+function download_menu() {
+  $items = array();
+  $items['download/%'] = array(
+    'page callback' => 'download_download',
+    'page arguments' => array(1),
+    'access arguments' => array('see download link'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function download_permission() {
+  return array(
+    'see download link' => array(
+      'title' => t('See download link'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_info().
+ */
+function download_field_info() {
+  return array(
+    'download_link' => array(
+      'label' => 'Download all files',
+      'description' => t('A download link to get archived files'),
+      'default_widget' => 'download_link_widget',
+      'default_formatter' => 'download_link_formatter',
+      'instance_settings' => array('filename' => ''),
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_field_is_empty().
+ */
+function download_field_is_empty($item, $field) {
+  return empty($item['download_fields']);
+}
+
+/**
+ * Implements hook_field_instance_settings_form().
+ */
+function download_field_instance_settings_form($field, $instance) {
+
+  $settings = $instance['settings'];
+
+  $form['filename'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Filename for the download'),
+    '#default_value' => $settings['filename'],
+  );
+
+  if (module_exists('token')) {
+    $form['tokens'] = array(
+      '#theme' => 'token_tree',
+      '#token_types' => array('node'),
+      '#global_types' => FALSE,
+    );
+  }
+
+  return $form;
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ */
+function download_field_formatter_info() {
+  return array(
+    'download_link_formatter' => array(
+      'label' => t('Download link formatter'),
+      'field types' => array('download_link'),
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_field_formatter_view().
+ */
+function download_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array();
+  switch ($display['type']) {
+    case 'download_link_formatter':
+      foreach ($items as $delta => $item) {
+        if ($item['download_fields']) {
+          $fields = explode(';', $item['download_fields']);
+
+          $valid_file_found = FALSE;
+          foreach ($fields as $fieldname) {
+            if (isset($entity->{$fieldname})) {
+
+              foreach ($entity->{$fieldname} as $field_array) {
+                foreach ($field_array as $file) {
+                  if (file_valid_uri($file['uri'])) {
+                    $valid_file_found = TRUE;
+                    break;
+                  }
+                }
+              }
+
+            }
+          }
+          if ($valid_file_found) {
+            $element[$delta] = array(
+              '#theme' => 'link',
+              '#text' => $item['download_label'],
+              '#path' => 'download/' . $entity->nid . '-' . $delta,
+              '#options' => array('attributes' => array(), 'html' => FALSE),
+            );
+          }
+        }
+      }
+      break;
+  }
+  return $element;
+}
+
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function download_field_widget_info() {
+  return array(
+    'download_link_widget' => array(
+      'label' => t('Field selector'),
+      'field types' => array('download_link'),
+    ),
+  );
+}
+
+
+/**
+ * Implements hook_field_widget_form().
+ */
+function download_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
+  $value = isset($items[$delta]['download_fields']) ? $items[$delta]['download_fields'] : '';
+  $default_label = isset($items[$delta]['download_label']) ? $items[$delta]['download_label'] : '';
+  $default_value = is_array($value) ? $value : explode(';', $value);
+
+  $widget = $element;
+  $widget['#delta'] = $delta;
+
+  switch ($instance['widget']['type']) {
+
+    case 'download_link_widget':
+
+      $options = array();
+      $fields = field_info_fields();
+      $allowed_types = array('file', 'image');
+      foreach ($fields as $field_name => $field) {
+        $used_bundles = array();
+        foreach ($field['bundles'] as $bundles) {
+          $used_bundles = array_merge($used_bundles, $bundles);
+        }
+        if (in_array($instance['bundle'], $used_bundles)) {
+          if (in_array($field['type'], $allowed_types)) {
+            $options[$field['field_name']] = $field['field_name'];
+          }
+        }
+      }
+
+      $widget += array(
+        '#type' => 'checkboxes',
+        '#title' => 'Select fields to compress.',
+        '#options' => $options,
+        '#default_value' => $default_value,
+      );
+      $label = array(
+        '#type' => 'textfield',
+        '#title' => 'Text to display',
+        '#delta' => $delta,
+        '#default_value' => $default_label,
+      );
+      break;
+
+  }
+
+  $element['download_fields'] = $widget;
+  if (isset($label)) {
+    $element['download_label'] = $label;
+  }
+  return $element;
+}
+
+function download_field_presave($entity_type, $entity, $field, $instance, $langcode, &$items) {
+  foreach ($items as $key => $item) {
+    if (isset($item['download_fields'])) {
+      $fields = '';
+      foreach ($item['download_fields'] as $fieldname => $value) {
+        if ($value != '0') {
+          $fields .= $fieldname . ';';
+        }
+      }
+      if ($fields == '') {
+        unset($items[$key]);
+      }
+      else {
+        $items[$key]['download_fields'] = $fields;
+      }
+    }
+  }
+}
+
+
+/**
+ * Implements hook_field_widget_error().
+ */
+function download_field_widget_error($element, $error, $form, &$form_state) {
+  switch ($error['error']) {
+    case 'download_link_invalid':
+      form_error($element, $error['message']);
+      break;
+  }
+}
+
+function download_download($field_info) {
+
+  list($nid, $delta) = explode('-', $field_info);
+
+  $lib_path = libraries_get_path('pclzip');
+  if (!is_dir($lib_path)) {
+    drupal_goto('node/' . $nid);
+  }
+
+  include $lib_path . '/pclzip.lib.php';
+
+  $field_name = 'download';
+  $files = array();
+  $node = node_load($nid);
+  $instances = field_info_instances('node', $node->type);
+  $filename = $nid . '-' . $delta;
+
+  foreach ($instances as $instance) {
+    $field_info = field_info_field($instance['field_name']);
+
+    if ($field_info['type'] == 'download_link') {
+      $field_name = $instance['field_name'];
+
+      if(!empty($instance['settings']['filename'])){
+        $filename = _download_get_filename($instance['settings']['filename'], $node);
+      }
+    }
+  }
+
+  $fields = $node->{$field_name}[LANGUAGE_NONE][$delta]['download_fields'];
+  $fieldnames = array_filter(explode(';', $fields));
+
+  foreach ($fieldnames as $fieldname) {
+    if (isset($node->{$fieldname})) {
+      foreach ($node->{$fieldname} as $field_array) {
+        foreach ($field_array as $field) {
+          $files[] = drupal_realpath($field['uri']);
+        }
+      }
+    }
+  }
+
+  $filename = $filename . '.zip';
+  $tmp_file = file_save_data('', 'temporary://' . $filename);
+  $tmp_file->status = 0;
+  $file = file_save($tmp_file);
+  $archive = new PclZip(drupal_realpath($file->uri));
+  $archive->add($files, PCLZIP_OPT_REMOVE_ALL_PATH);
+
+  // Call all hook_download_downloads
+  module_invoke_all('download_download', $files, $node);
+
+  header("Content-Type: application/force-download");
+  header('Content-Description: File Transfer');
+  header('Content-Disposition: inline; filename=' . $filename);
+  readfile(drupal_realpath($file->uri));
+  exit();
+}
+
+function _download_get_filename($filename, $node) {
+
+  $fn = token_replace(check_plain($filename),array('node'  =>  $node));
+  $fn = preg_replace("/[^a-zA-Z0-9\.\-_]/", "", $fn);
+
+  return $fn;
+}

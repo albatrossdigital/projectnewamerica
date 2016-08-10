@@ -1,0 +1,15 @@
+diff --git a/download.module b/download.module
+index 4b57db4..5729cb0 100644
+--- a/download.module
++++ b/download.module
+@@ -178,6 +178,10 @@ function download_download($nid) {
+       }
+     }
+   }
++
++  // Call all hook_download_downloads
++  module_invoke_all('download_download', $files, $node);
++
+   $archive->add($files, PCLZIP_OPT_REMOVE_ALL_PATH);
+   header("Content-Type: application/force-download");
+   header('Content-Description: File Transfer');

@@ -1,0 +1,9 @@
+; $Id: reach_blog_filters
+name = Reach Blog Filters
+description = "Adds dynamic filter functionality to a multi content type blog"
+core = 7.x
+package = "Reach"
+
+files[] = reach_blog_filters.module
+
+

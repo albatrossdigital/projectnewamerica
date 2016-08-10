@@ -1,0 +1,4 @@
+name = PNA Users
+core = 7.x
+package = PNA
+;dependencies[] = ctools_automodal

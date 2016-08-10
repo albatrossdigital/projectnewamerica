@@ -1,0 +1,25 @@
+/*------------------------- */
+/*  Form node + Panels BForm */
+/*------------------------- */
+/* line 7, ../sass/ie8.sass */
+body.node-type-form #block-system-main .pane-node-webform .form-item,
+body.node-type-form #block-system-main .pane-node-webform input.form-text {
+  width: 276px; }
+
+/* line 15, ../sass/ie8.sass */
+#region-branding .block-views .form-item-search-terms input {
+  padding-top: 4px !important; }
+
+/*  Footer First Region */
+/*......................... */
+/* line 21, ../sass/ie8.sass */
+#region-footer-first {
+  /* sign up block */ }
+  /* line 25, ../sass/ie8.sass */
+  #region-footer-first .block-webform form .form-item {
+    max-width: none !important;
+    width: 210px; }
+    /* line 29, ../sass/ie8.sass */
+    #region-footer-first .block-webform form .form-item input {
+      padding-top: 5px;
+      width: 210px; }

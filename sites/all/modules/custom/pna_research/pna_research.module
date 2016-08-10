@@ -1,0 +1,98 @@
+<?php
+/**
+ * @file
+ * Code for the Research feature.
+ */
+
+include_once 'pna_research.features.inc';
+
+//define('PNA_RESEARCH_POLITICAL', 0);
+//define('PNA_RESEARCH_NON_PROFIT', 1);
+
+/**
+ * Implements hook_file_download().
+ */
+function pna_research_file_download($uri) {
+  $files = entity_load('file', FALSE, array('uri' => $uri));
+  foreach ($files as $file) {
+    $refs = file_get_file_references($file);
+    foreach ($refs as $key => $ref) {
+      if ($key == 'field_research_files') {
+        $nids = array_keys($ref['node']);
+        $node = node_load($nids[0]);
+        rules_invoke_event('pna_research_file_downloaded', $node);
+
+        // Submit the contact rules callback only if this user account has a
+        // redhen contact associated with it.
+        global $user;
+        if ($contact = redhen_contact_user_contact($user)) {
+          rules_invoke_event('pna_research_file_downloaded_contact', $node, $contact, $file->filename);
+          //watchdog('jeff', 'data !d', array('!d' => print_r($files,1)));
+          //watchdog('jeff', 'contact !d', array('!d' => print_r($contact,1)));
+
+        }
+        
+        // Check user access
+        if(!empty($user->uid)) {
+          //watchdog('jeff', 'contact !d', array('!d' => print_r(array('Content-Type' => $file->filemime),1)));
+          //return array('Content-Type' => $file->filemime);
+          $headers = file_get_content_headers($file);
+          //watchdog('jeff', 'file !d', array('!d' => print_r($file, 1)));
+          //watchdog('jeff', 'contact !d', array('!d' => print_r($headers, 1)));
+          return $headers;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_download_download().
+ */
+function pna_research_download_download($files, $node) {
+  rules_invoke_event('pna_research_file_downloaded', $node);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+// This is now down thru hacks to panopoly_admin.
+function pna_research_form_views_form_reach_contacts_redhen_page_alter(&$form, &$form_state, $form_id) {
+  $form['bundle_subscriber']['_append::field_group']['#type'] = 'hidden';
+  $form['bundle_subscriber']['_append::field_group']['#default_value'] = TRUE;
+  unset($form['tokens']);
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function pna_research_form_research_node_form_alter(&$form, &$form_state) {
+  $form['field_download']['#attributes']['style'] = 'display:none';
+  $form['field_download']['#attributes']['style'] = 'display:none';
+}
+function pna_research_form_research_political_node_form_alter(&$form, &$form_state) {
+  pna_research_form_research_node_form_alter($form, $form_state);
+}
+function pna_research_form_research_nonprofit_node_form_alter(&$form, &$form_state) {
+  pna_research_form_research_node_form_alter($form, $form_state);
+}
+
+/**
+ * Implements hook_node_presave().
+ */
+function pna_research_node_presave($node) {
+  if (strpos($node->type, 'research') !== FALSE && count($node->field_research_files['und']) <= 1) {
+    unset($node->field_download);
+  }
+}
+
+
+/**
+ * Implements hook_file_presave().
+ */
+function pna_research_file_presave($file) {
+  if (strpos($file->filename, '.') === FALSE) {
+    $file->filename .= '.' . pathinfo($file->uri, PATHINFO_EXTENSION);
+  }
+dpm($file);
+}

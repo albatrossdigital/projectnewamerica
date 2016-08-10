@@ -1,0 +1,59 @@
+<?php
+// $Id: reach_blog_filters
+
+function reach_blog_filters_form_views_exposed_form_alter(&$form, &$form_state, $form_id) {
+  
+  if($form['#id'] == ('views-exposed-form-search-api-blog-list-panel-pane-1' || 'views-exposed-form-search-api-blog-list-panel-pane-2')) {
+
+    unset($form['field_blog_category']['#type']);
+    $form['field_blog_category_tid']['#type'] = 'value';
+    //unset($form['field_blog_category_tid']['#title']);
+    
+    $links =  array();
+    foreach($form['field_blog_category']['#options'] as $key =>  $value) {
+      if($key == 'All') {
+        $value = 'All';
+      }
+      $links[] = array(
+        'name' => $key,
+        'title' => $value,
+      );
+    }
+    
+    
+    $selected = (empty($form_state['input']['field_blog_category_tid'])) ? 'All' : $form_state['input']['field_blog_category_tid'];
+    
+    
+    $dest = 'latest';
+    if(count($form_state['view']->args) > 0) {
+      $dest .= '/' . $form_state['view']->args[0];
+    }
+          
+    $items = array();
+    foreach($links as $key => $link) {
+      $options = array(
+        'attributes' => array(
+          'class' => array(
+            ($selected == $link['name']) ? 'current' : 'link',
+          ), 
+        ),
+      );
+      if($link['name'] != 'All') {
+        $options['query'] = array(
+          'field_blog_category_tid' => $link['name'],
+        );
+      }
+      $items[] = array(
+        'data' => l($link['title'], $dest, $options),
+      );
+    }
+    
+    $attributes = array(
+      'class' => 'menu'
+    );
+         
+    $form['field_blog_category']['#markup'] = theme_item_list(array('items' => $items, 'type' => 'ul', 'attributes' => $attributes));
+      
+  }
+}
+

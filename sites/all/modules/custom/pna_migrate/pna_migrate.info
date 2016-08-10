@@ -1,0 +1,4 @@
+name = PNA Migrate
+core = 7.x
+package = PNA
+

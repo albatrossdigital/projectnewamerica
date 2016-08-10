@@ -1,0 +1,408 @@
+<?php
+/**
+ * @file
+ * Code for the Research feature.
+ */
+
+//include_once 'pna_research.features.inc';
+
+/**
+ * Implements hook_menu().
+ */
+function pna_users_menu() {
+  $items['user/account'] = array(
+    'title' => 'My Account',
+    'access callback' => 'user_is_logged_in',
+    'type' => MENU_CALLBACK,
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('pan_user_user_account_form'),
+  );
+
+  // path with autocomplete function for cities
+  $items['admin/contact/autocomplete'] = array(
+    'title' => 'Autocomplete for RedHen Contacts',
+    'page callback' => '_pna_users_redhen_contact_autocomplete',
+    'access callback' => 'redhen_contact_access',
+    'access arguments' => array('edit'), //or whatever permission makes sense
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_menu_alter().
+ */
+function pna_users_menu_alter(&$items) {
+  // Disable Redhen Connections tab
+  $items['redhen/contact/%redhen_contact/connections']['access callback'] = FALSE;
+
+  // Add "Create contact" link to /admin/contacts view
+  //$items['admin/contacts/add'] = $items['redhen/contact/add'] = FALSE;
+
+  // Redirect
+  $items['taxonomy/term/%taxonomy_term']['page callback'] = '_pna_users_taxonomy_term_page';
+
+  // Loop through the Redhen Content and Structure arrays to change the links to contacts.
+  /*foreach ($items as $key => $item) {
+    if (strpos($key, 'admin/structure/redhen') === 0) {
+      $items[str_replace('admin/structure/redhen', 'admin/structure/contacts', $key)] = $items[$key];
+      unset($items[$key]);
+    }
+    if (strpos($key, 'redhen') === 0) {
+      $items[str_replace('redhen', 'admin/contacts', $key)] = $items[$key];
+      unset($items[$key]);
+    }
+  }*/
+}
+
+/**
+ * Hijacks the taxonomy view page to redirect to the contact page for groups/orgs.
+ */
+function _pna_users_taxonomy_term_page($term) {
+  if ($term->vocabulary_machine_name == 'groups') {
+    drupal_goto('admin/contacts', array('query' => array('group[]' => $term->tid)));
+  } else {
+    return taxonomy_term_page($term);
+  }
+}
+
+
+
+
+/**
+ * Implements hook_redhen_contact_name_alter().
+ */
+//function pna_users_redhen_contact_name_alter(&$name, $context) {
+//}
+
+
+
+/**
+ * The subform wrapper for the general account edit page.
+ */
+function pan_user_user_account_form($form, &$form_state, $user = NULL, $redhen_contact = NULL) {
+  if (empty($user)) {
+    global $user;
+  }
+  $redhen_contact = !empty($redhen_contact) ? $redhen_contact : redhen_contact_user_contact($user);
+
+  // @todo access control
+
+  $form['account_info'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Account information'),
+  );
+  $form['account_info']['user'] = array(
+    '#type' => 'subform',
+    '#subform_id' => 'user_profile_form',
+    '#subform_file' => array('module' => 'user', 'name' => 'user.pages'),
+    '#subform_arguments' => array($user),
+    '#subform_default_triggering_element' => array('actions', 'submit'),
+    '#required' => TRUE,
+  );
+
+  if (!empty($redhen_contact)) {
+    $form['contact_info'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Contact information'),
+    );
+    $form['contact_info']['redhen_contact'] = array(
+      '#type' => 'subform',
+      '#subform_id' => 'redhen_contact_contact_form',
+      '#subform_file' => array('module' => 'redhen_contact', 'name' => 'includes/redhen_contact.forms'),
+      '#subform_arguments' => array($redhen_contact),
+      '#subform_default_triggering_element' => array('actions', 'submit'),
+      '#required' => TRUE,
+    );
+
+    //dpm($form);
+  }
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Save all'),
+    '#weight' => 40,
+    '#subform_triggering_element' => array(
+      'node_form' => array('actions', 'submit'),
+    ),
+    '#submit' => array('subform_submit_all'),
+  );
+
+  return $form;
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function pna_users_form_redhen_contact_contact_user_form_alter(&$form, &$form_state, $form_id) {
+  if (isset($form_state['values']['link_user']) && !empty($form_state['values']['link_user'])) {
+    // Change the default username to email address
+    if (!empty($form['account']['name'])) {
+      $form['account']['name']['#default_value'] = $form['account']['mail']['#default_value'];
+    }
+
+    // Strip down the available roles
+    $allowed_roles = array(3, 4, 5);
+    foreach ($form['account']['roles']['#options'] as $rid => $label){
+      if (!in_array($rid, $allowed_roles)) {
+        unset($form['account']['roles']['#options'][$rid]);
+      }
+    }
+
+    // Change "Notify user" language
+    dpm($form);
+    $form['account']['notify']['#title'] = T('Send this user the welcome email');
+    $form['account']['notify']['#default_value'] = TRUE;
+    
+    // Add send welcome email checkbox for existing accts too
+    if (!empty($form['existing'])) {
+      $form['send_welcome_email'] = array(
+        '#type' => 'checkbox',
+        '#title' => 'Send reset password email',
+        '#weight' => 0,
+      );
+    }
+
+    // Add the membership checkbox
+    $form['redhen_membership'] = array(
+      '#type' => 'checkbox',
+      '#title' => 'Create a new membership',
+      '#weight' => -5,
+    );
+    $form['membership'] = array(
+      '#type' => 'fieldset',
+      '#title' => t('Membership settings'),
+      '#states' => array(
+        'visible' => array(// action to take.
+          ':input[name="redhen_membership"]' => array('checked' => TRUE),
+        ),
+      ),
+      '#weight' => -4,
+    );
+
+    $form['membership']['membership_expire'] = array(
+      '#type' => 'checkbox',
+      '#title' => t('Make membership auto-expire in one year'),
+      '#default_value' => TRUE,
+    );
+
+    /*$form['membership']['membership_contact_responsible'] = array(
+      '#title' => t('PNA Staff Member Responsible'),
+      '#type' => 'textfield',
+      '#description' => $desc,
+      '#default_value' => $default,
+      '#autocomplete_path' => 'admin/contact/autocomplete/subscriber',
+    );*/
+
+    $form['#submit'][] = 'pna_users_form_redhen_contact_contact_user_form_submit';
+  }
+}
+
+/**
+ * Form alter submit callback.
+ * Create membership if necessary.
+ */
+function pna_users_form_redhen_contact_contact_user_form_submit(&$form, &$form_state) {
+  if ($form_state['values']['roles'][5] && $form_state['values']['redhen_membership']) {
+    //drupal_set_message('error')
+    // @TODO
+  }
+  elseif ($form_state['values']['redhen_membership']) {
+    $type = $form_state['values']['roles'][3] ? 'non_profit' : 'political';
+    $membership = entity_get_controller('redhen_membership')->create(array('type' => $type));
+
+    $entity = $form_state['redhen_contact'];
+    $entity_type = $entity->entityType();
+    $entity_uri = entity_uri($entity_type, $entity);
+
+    global $user;
+    $membership->author_uid = !empty($form_state['values']['membership_author']) ? $form_state['values']['membership_author'] : $user->uid;
+
+    $membership->note = $form_state['values']['note'];
+    $membership->start_date = time();//NULL;
+    $membership->expire_date = $form_state['values']['membership_expire'] ? strtotime('+1 year') : NULL;
+    $membership->membership_state = $form_state['values']['membership_state'] ? $form_state['values']['membership_state']: TRUE;
+    $membership->entity_type = $entity_type;
+    $membership->entity_id = entity_id($entity_type, $entity);
+
+    //dpm($membership);
+
+    // Notify field widgets (just in case).
+    field_attach_submit('redhen_membership', $membership, $form, $form_state);
+
+    // Save the membership.
+    redhen_membership_save($membership);
+
+    drupal_set_message(t('Membership %label saved.', array('%label' => $membership->label())));
+    $form_state['redirect'] = $entity_uri['path'] . '/memberships';
+  }
+  dpm($form_state);
+  if (!empty($form_state['values']['send_welcome_email']) && $form_state['values']['send_welcome_email'] == TRUE) {
+    $account = user_load_by_mail($form_state['values']['existing']);
+    _user_mail_notify('register_admin_created', $account);
+    drupal_set_message(t('A welcome message with further instructions has been e-mailed to the user !name.',
+      array('!name' => l($account->name, 'user/' . $account->uid)))
+    );
+  }
+  
+}
+
+
+/**
+ * Implements hook_form_alter().
+ * Customize the "Change Organization" VBO form
+ */
+function pna_users_form_redhen_contact_contact_form_alter(&$form, &$form_state, $form_id) {
+  if (arg(1) == 'account') {
+    unset($form['redhen_contact_email']);
+  }
+  $form['actions']['submit']['#value'] = t('Save');
+}
+
+
+/**
+ * The subform wrapper for the general account edit page.
+ */
+/*function pan_user_contact_create_form($form, &$form_state, $user = NULL, $redhen_contact = NULL) {
+  if (empty($user)) {
+    global $user;
+  }
+  $redhen_contact = !empty($redhen_contact) ? $redhen_contact : redhen_contact_user_contact($user);
+
+  // @todo access control
+  //'access callback' => 'redhen_contact_access',
+   //   'access arguments' => array('create'),
+
+  $form['contact_info'] = array(
+    '#type' => 'fieldset',
+    '#title' => t('Contact information'),
+  );
+  $form['contact_info']['redhen_contact'] = array(
+    '#type' => 'subform',
+    '#subform_id' => 'redhen_contact_add_page',
+    '#subform_file' => array('module' => 'redhen_contact', 'name' => 'includes/redhen_contact.pages'),
+    '#subform_arguments' => array('supporter'),
+    '#subform_default_triggering_element' => array('actions', 'submit'),
+    '#required' => TRUE,
+  );
+
+
+  $form['account_info'] = array(
+    '#type' => 'fieldset',
+    '#collapsable' => TRUE,
+    '#collapsed' => TRUE,
+    '#title' => t('Create a new account'),
+  );
+  $form['account_info']['user'] = array(
+    '#type' => 'subform',
+    '#subform_id' => 'user_register_form',
+    //'#subform_file' => array('module' => 'user', 'name' => 'user.pages'),
+    //'#subform_arguments' => array($user),
+    '#subform_default_triggering_element' => array('actions', 'submit'),
+    '#required' => FALSE,
+  );
+
+    $items["redhen/{$path}/%{$entity_type}/memberships"] = array(
+      'title' => 'Memberships',
+      'page callback' => 'redhen_membership_page',
+      'page arguments' => array(2, $entity_type),
+      'access callback' => $entity_type . '_access',
+      'access arguments' => array('view', 2),
+      'type' => MENU_LOCAL_TASK,
+      'file' => 'includes/redhen_membership.pages.inc',
+      'weight' => -3,
+    );
+
+  //TODO: access check
+  //'access callback' => 'redhen_membership_access',
+  //'access arguments' => array('edit', 2),
+  $form['membership_info'] = array(
+    '#type' => 'fieldset',
+    '#collapsable' => TRUE,
+    '#collapsed' => TRUE,
+    '#title' => t('Create a new membership'),
+  );
+  $form['account_info']['redhen_membership'] = array(
+    '#type' => 'subform',
+    '#subform_id' => 'redhen_membership_add_page',
+    '#subform_file' => array('module' => 'redhen_membership', 'name' => 'includes/redhen_membership.pages'),
+    '#subform_arguments' => array('supporter', ),
+    '#subform_default_triggering_element' => array('actions', 'submit'),
+    '#required' => FALSE,
+  );
+
+
+  $form['actions'] = array('#type' => 'actions');
+  $form['actions']['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Save all'),
+    '#weight' => 40,
+    '#subform_triggering_element' => array(
+      'node_form' => array('actions', 'submit'),
+    ),
+    '#submit' => array('subform_submit_all'),
+  );
+
+  return $form;
+}
+
+
+/**
+ * Implements hook_modal_paths().
+ */
+/*function pna_users_modal_paths() {
+  $paths = array();
+
+  $paths['user/login'] = array(
+    'style' => 'pna_default',
+    'redirect' => 'research',
+  );
+
+  return $paths;
+}*/
+
+/**
+ * Implements hook_modal_styles().
+ */
+/*function pna_users_styles() {
+  $styles = array();
+
+  $styles['pna_default'] = array(
+    'modalSize' => array(
+      'type' => 'fixed',
+      'width' => 500,
+      'height' => 300,
+    ),
+  );
+
+  return $styles;
+}*/
+
+/**
+ * Implements hook_user_login().
+ */
+function pna_users_user_login(&$edit, $account) {
+  // See if this ip has logged in before
+  $query = new EntityFieldQuery();
+  $entities = $query->entityCondition('entity_type', 'action')
+                    ->fieldCondition('field_action_user', 'target_id', $account->uid, '=')
+                    ->execute();
+  $isnew = empty($entities['user']) ? 'NEW' : 'existing';
+  $points = empty($entities['user']) ? 10 : 0;
+  $contact = redhen_contact_user_contact($account);
+  if (!empty($contact)) {
+    rules_invoke_event('pna_users_user_login_ip', $account, $contact, $isnew, ip_address(), $points);
+  }
+  //dpm(array($account, $isnew, ip_address(), $points));
+}
+
+
+/**
+ * Implements hook_entity_prepare_view().
+ */
+function pna_users_entity_prepare_view($entities, $type) {
+  //dpm($entities);
+  //dpm($type);
+}

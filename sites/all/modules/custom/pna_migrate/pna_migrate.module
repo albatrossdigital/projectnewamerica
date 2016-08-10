@@ -1,0 +1,193 @@
+<?php
+/**
+ * @file
+ * Code for the Research feature.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function pna_migrate_menu() {
+  $items['admin/pna-migrate'] = array(
+    'title' => 'Migrate',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('pna_migrate_form'),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+
+/**
+ * Implements hook_form().
+ */
+function pna_migrate_form($form, &$form_state) {
+  $form = array();
+
+  $form['directory'] = array(
+    '#type' => 'textarea',
+    '#title' => t('dir'),
+    '#default_value' => '/tmp/PNA Import/PNA Political Research',
+  );
+
+  $form['type'] = array(
+    '#type' => 'textfield',
+    '#title' => t('type'),
+    '#default_value' => 'research_political',
+  );
+
+  $form['uid'] = array(
+    '#type' => 'textfield',
+    '#title' => t('uid'),
+    '#default_value' => '1',
+  );
+
+  /*$form['year'] = array(
+    '#type' => 'textfield',
+    '#title' => t('year'),
+    '#default_value' => '200',
+  );*/
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#title' => t('submit'),
+  );
+
+  return $form;
+}
+
+function pna_migrate_form_submit($form, &$form_state) {
+  $node_type = $form_state['values']['type'];
+  $uid = $form_state['values']['uid'];
+
+  $directory = $form_state['values']['directory'];
+  $pattern = !empty($pattern) ? $pattern :  '*';
+  $dirs = glob("$directory/$pattern");
+  $tested = 0;
+  foreach ($dirs as $dir) {
+    $year = substr($dir, -4);
+    $files = glob("$dir/$pattern");
+    foreach ($files as $file) {
+      $type = getFileExtension($file);
+
+//if ($tested < 1000) {
+//$tested ++;
+
+      if ($type != 'zip' && strpos($file, 'MACOSX') === FALSE) {
+        if ($type && $type != $file && strlen($type) < 6) {
+          // Single file
+          $file_obj = media_parse_to_file($file);
+          $title = substr(str_replace($type, '', $file_obj->filename), 0, -1);
+          pna_migrate_prepare_node($node_type, $title, $uid, $year, array($file_obj));
+        }
+        else {
+          // Dir
+          $dir_files = glob("$file/$pattern");
+          $file_objs = array();
+
+          foreach ($dir_files as $dir_file) {
+            $type = getFileExtension($file);
+            if ($type != 'zip') {
+              $tested ++;
+              $file_objs[] = media_parse_to_file($dir_file);
+            }
+          }
+          $title_arr = explode('/', $file);
+          $title = $title_arr[count($title_arr)-1];
+          pna_migrate_prepare_node($node_type, $title, $uid, $year, $file_objs);
+        }
+      }
+//}
+
+    }
+  }
+
+
+}
+
+function pna_migrate_prepare_node($type, $title, $uid, $year, $files) {
+  //$year = 2004;
+  $node = new stdClass();
+  $node->type = $type;
+  $node->uid = $uid;
+  node_object_prepare($node);
+  $node->status = TRUE;
+  $node->title = $seoname = preg_replace('/(\S)\-(\S)/', '$1 $2', $title);
+  $node->field_research_files['und'] = array();
+  foreach ($files as $file) {
+    $node->field_research_files['und'][] = array(
+      'fid' => $file->fid,
+      'display' => TRUE,
+    );
+  }
+  $node->created = mktime(0, 0, 0, 1, 1, $year);
+  //dpm($node);
+  node_save($node);
+  return $node;
+}
+
+// from http://roshanbh.com.np/2008/01/getting-filename-and-extension-in-php-using-explode-and-pathinfo.html
+function getFileExtension($fileName)
+{
+   $parts=explode(".",$fileName);
+   return $parts[count($parts)-1];
+}
+
+
+
+
+/**
+ * Implements hook_entity_insert().
+ */
+/*function pna_migrate_entity_insert($entity, $type) {
+  if ($type == 'redhen_contact') {
+
+
+    // Create user
+    $email = $entity->redhen_contact_email[LANGUAGE_NONE][0]['value'];
+    $type = strtolower(str_replace('-', '_', $entity->field_membership_type[LANGUAGE_NONE][0]['value']));
+    $user_data = array(
+      'name' => $email,
+      'mail' => $email,
+      'pass' => user_password(),
+      'roles' => ($type == 'political') ? array(2 => TRUE) : array(3 => TRUE),
+      'status' => TRUE,
+    );
+    // Add link to redhen_contact
+    if ($account = user_save(NULL, $user_data)) {
+      $entity->uid = $account->uid;
+      //redhen_contact_save($entity);
+      //entity_save($type, $entity);
+    }
+
+    // Create membership
+    $membership = entity_get_controller('redhen_membership')->create(array('type' => $type));
+    $membership->author_uid = 41;
+    //$membership->note = $form_state['values']['note'];
+    $membership->start_date = NULL;//time();
+    $membership->expire_date = NULL; // @todo? $form_state['values']['membership_expire'] ? strtotime('+1 year') : NULL;
+    $membership->membership_state = TRUE;
+    $membership->entity_type = $entity->entityType();
+    $membership->entity_id = entity_id($entity_type, $entity);
+    // Notify field widgets (just in case).
+    //field_attach_submit('redhen_membership', $membership, $form, $form_state);
+    // Save the membership.
+    redhen_membership_save($membership);
+
+    // Create note
+    $redhen_note = entity_get_controller('redhen_note')->create(array('type' => 'redhen_note'));
+    $redhen_note->entity_type = 'redhen_contact';
+    $redhen_note->entity = $entity;
+    $redhen_note->entity_id = $entity->contact_id;
+    $redhen_note->created = time();
+    $redhen_note->updated = time();
+    $redhen_note->author_uid = 41;
+    $redhen_note->redhen_note_body[LANGUAGE_NONE][0]['value'] = $entity->field_notes[LANGUAGE_NONE][0]['value'];
+    $redhen_note->redhen_note_body[LANGUAGE_NONE][0]['safe_value'] = $entity->field_notes[LANGUAGE_NONE][0]['value'];
+    $redhen_note->redhen_note_body[LANGUAGE_NONE][0]['format'] = 'wysiwyg_editor';
+    $redhen_note->redhen_note_type[LANGUAGE_NONE][0]['tid'] = 124;
+    entity_save('redhen_note', $redhen_note);
+  }
+}*/
