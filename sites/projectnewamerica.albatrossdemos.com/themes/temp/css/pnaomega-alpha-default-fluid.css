@@ -1,0 +1,992 @@
+/* line 270, ../../../../all/themes/reach_core/sass/_mixins.sass */
+#region-menu .block-views h2.block-title:before, #page #region-menu .block-views h2.block-title:before {
+  content: "\f002"; }
+
+/* line 796, ../../../../all/themes/reach_core/sass/_mixins.sass */
+#region-user-first #block-superfish-1 h2.block-title:before {
+  content: "\f0c9"; }
+
+/* line 898, ../../../../all/themes/reach_core/sass/_mixins.sass */
+#region-user-first #block-superfish-1 h2.block-title:before, #region-menu .block-views h2.block-title:before, #page #region-menu .block-views h2.block-title:before {
+  font-family: FontAwesome !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  text-decoration: inherit !important;
+  vertical-align: middle !important; }
+
+/* line 52, icons/*.png */
+.icons-sprite, .icons-facebook, .icons-twitter {
+  background: url('../images/icons-sf21d8d09e9.png') no-repeat; }
+
+/* line 63, ../../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -78px; }
+
+/* line 63, ../../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 0; }
+
+/* Main sprite function assumes text is being replaced */
+/* Helper sprite does background position */
+/* line 297, ../sass/_mixins.sass */
+#region-branding .block-views, body.external-section #region-menu .block-views, #region-menu .block-views .content, #region-menu .block-views .content .views-widget-sort-by,
+#region-menu .block-views .content .views-widget-sort-order, #region-sidebar-second .block-views-team-jump-list-block-1, #region-footer-first .menu-name-main-menu ul ul, body.node-type-blog #block-system-main .field-name-taxonomy-alter-for-blog-listing,
+.node-blog .field-name-taxonomy-alter-for-blog-listing, body.node-type-blog #block-system-main.node-teaser .field-name-taxonomy-alter-for-blog-listing .field-items,
+.node-blog.node-teaser .field-name-taxonomy-alter-for-blog-listing .field-items, body.context-latest #region-sidebar-second .block-facetapi,
+body.context-latest #region-sidebar-second .block-blog-latest-posts-block-1,
+body.context-latest #region-sidebar-second .block-blog-latest-posts-block-2,
+body.context-latest #region-sidebar-second .block-blog-latest-posts-block-3,
+body.alternate-content-layout.node-type-blog #region-sidebar-second .block-facetapi,
+body.alternate-content-layout.node-type-blog #region-sidebar-second .block-blog-latest-posts-block-1,
+body.alternate-content-layout.node-type-blog #region-sidebar-second .block-blog-latest-posts-block-2,
+body.alternate-content-layout.node-type-blog #region-sidebar-second .block-blog-latest-posts-block-3, body.page-search #region-sidebar-second .block-views h2 {
+  display: none; }
+
+/* line 303, ../sass/_mixins.sass */
+body.page-research-bookmarks #region-preface-first .block h2.block-title,
+body.page-research-database #region-preface-first .block h2.block-title,
+body.node-type-research-political #region-preface-first .block h2.block-title,
+body.node-type-research-nonprofit #region-preface-first .block h2.block-title {
+  color: #00a187; }
+
+/* line 309, ../sass/_mixins.sass */
+#region-user-first #block-superfish-1 h2.block-title {
+  color: white; }
+
+/* line 312, ../sass/_mixins.sass */
+body.page-research-bookmarks.mobile-research-filter-open #region-preface-first .block h2.block-title,
+body.page-research-database.mobile-research-filter-open #region-preface-first .block h2.block-title,
+body.node-type-research-political.mobile-research-filter-open #region-preface-first .block h2.block-title,
+body.node-type-research-nonprofit.mobile-research-filter-open #region-preface-first .block h2.block-title {
+  color: black; }
+
+/* line 315, ../sass/_mixins.sass */
+body.node-type-blog #block-system-main.node-teaser .field-name-taxonomy-alter-for-blog-listing,
+.node-blog.node-teaser .field-name-taxonomy-alter-for-blog-listing {
+  background-image: url(../images/DotPattern.jpg);
+  background-repeat: repeat; }
+
+/* line 322, ../sass/_mixins.sass */
+#region-user-first #block-superfish-1 h2.block-title, body.page-research-bookmarks #region-preface-first .block h2.block-title,
+body.page-research-database #region-preface-first .block h2.block-title,
+body.node-type-research-political #region-preface-first .block h2.block-title,
+body.node-type-research-nonprofit #region-preface-first .block h2.block-title {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+/* line 337, ../sass/_mixins.sass */
+body.not-front.external-section #page #region-content .region-content-inner, body.alternate-content-layout.node-type-blog #page #region-content .region-content-inner, body.page-research-bookmarks .pane-research-panel-pane-1 .views-row,
+body.page-research-bookmarks .pane-research-panel-pane-1 .view-empty,
+body.page-research-bookmarks .pane-flag-bookmarks-panel-pane-1 .views-row,
+body.page-research-bookmarks .pane-flag-bookmarks-panel-pane-1 .view-empty,
+body.page-research-bookmarks .pane-bookmarks-panel-pane-1 .views-row,
+body.page-research-bookmarks .pane-bookmarks-panel-pane-1 .view-empty,
+body.page-research-database .pane-research-panel-pane-1 .views-row,
+body.page-research-database .pane-research-panel-pane-1 .view-empty,
+body.page-research-database .pane-flag-bookmarks-panel-pane-1 .views-row,
+body.page-research-database .pane-flag-bookmarks-panel-pane-1 .view-empty,
+body.page-research-database .pane-bookmarks-panel-pane-1 .views-row,
+body.page-research-database .pane-bookmarks-panel-pane-1 .view-empty,
+body.node-type-research-political .pane-research-panel-pane-1 .views-row,
+body.node-type-research-political .pane-research-panel-pane-1 .view-empty,
+body.node-type-research-political .pane-flag-bookmarks-panel-pane-1 .views-row,
+body.node-type-research-political .pane-flag-bookmarks-panel-pane-1 .view-empty,
+body.node-type-research-political .pane-bookmarks-panel-pane-1 .views-row,
+body.node-type-research-political .pane-bookmarks-panel-pane-1 .view-empty,
+body.node-type-research-nonprofit .pane-research-panel-pane-1 .views-row,
+body.node-type-research-nonprofit .pane-research-panel-pane-1 .view-empty,
+body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .views-row,
+body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .view-empty,
+body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .views-row,
+body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .view-empty {
+  border: 1px solid #ebebeb; }
+
+/* line 350, ../sass/_mixins.sass */
+body.not-front.external-section #page #region-content .region-content-inner, body.alternate-content-layout.node-type-blog #page #region-content .region-content-inner {
+  padding: 12px; }
+
+/* line 436, ../sass/_mixins.sass */
+#region-sidebar-second #block-menu-block-1,
+#region-sidebar-second #block-menu-menu-anonymous-user-menu, body.context-latest #views-exposed-form-search-api-blog-list-panel-pane-1 .views-widget-filter-field_blog_category,
+body.context-latest #views-exposed-form-search-api-blog-list-panel-pane-2 .views-widget-filter-field_blog_category,
+body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog-list-panel-pane-1 .views-widget-filter-field_blog_category,
+body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog-list-panel-pane-2 .views-widget-filter-field_blog_category {
+  margin-top: -100px;
+  position: relative;
+  padding-bottom: 100px; }
+
+/* */
+/* line 8, ../sass/pnaomega-alpha-default-fluid.sass */
+#page .grid-1, #page .grid-2, #page .grid-3, #page .grid-4, #page .grid-5, #page .grid-6, #page .grid-7, #page .grid-8, #page .grid-9, #page .grid-10,
+#page .grid-11, #page .grid-12, #page .grid-13, #page .grid-14, #page .grid-15, #page .grid-16, #page .grid-17, #page .grid-18, #page .grid-19,
+#page .grid-20, #page .grid-21, #page .grid-22, #page .grid-23, #page .grid-24 {
+  display: block;
+  float: none;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: auto; }
+
+/* set variables for jaavascript */
+/* line 21, ../sass/pnaomega-alpha-default-fluid.sass */
+html {
+  font-family: "mobile"; }
+
+/************************* */
+/*  PAGE ELEMENTS */
+/************************ */
+/* line 30, ../sass/pnaomega-alpha-default-fluid.sass */
+.page-element {
+  /* logo */ }
+
+/************************* */
+/*  PAGE */
+/************************ */
+/************************* */
+/*  HEADER SECTION */
+/************************ */
+/*------------------------- */
+/*  User zone */
+/*------------------------- */
+/*  User First Region */
+/*......................... */
+/* line 65, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-user-first .block-block .content span {
+  display: none; }
+/* line 68, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-user-first #block-superfish-1 {
+  /* main menu in header */ }
+  /* line 69, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-user-first #block-superfish-1 h2.block-title {
+    cursor: pointer;
+    line-height: 27px;
+    line-height: 45px;
+    font-size: 1em; }
+    /* line 924, ../../../../all/themes/reach_core/sass/_mixins.sass */
+    #region-user-first #block-superfish-1 h2.block-title:before {
+      font-size: 18px; }
+    /* line 77, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-user-first #block-superfish-1 h2.block-title:before {
+      padding-right: 10px; }
+  /* line 81, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-user-first #block-superfish-1 .block-inner {
+    height: 45px;
+    overflow: hidden; }
+  /* line 87, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-user-first #block-superfish-1 ul.sf-menu.main-menu li {
+    float: none;
+    display: block; }
+    /* line 93, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-user-first #block-superfish-1 ul.sf-menu.main-menu li.sf-item-1 a.sf-depth-1:before {
+      width: 100%; }
+    /* line 96, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-user-first #block-superfish-1 ul.sf-menu.main-menu li a {
+      display: block;
+      float: none;
+      line-height: 40px;
+      padding-left: 20px; }
+    /* line 103, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-user-first #block-superfish-1 ul.sf-menu.main-menu li ul {
+      display: none !important; }
+
+/*  User Second Region */
+/*......................... */
+/* line 110, ../sass/pnaomega-alpha-default-fluid.sass */
+#page #region-user-second {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 20; }
+
+/* line 121, ../sass/pnaomega-alpha-default-fluid.sass */
+.block-user-dropdown-menu .content ul li a {
+  padding: 4px 0; }
+
+/*------------------------- */
+/* Branding Zone */
+/*------------------------- */
+/*  Zone Branding Region */
+/*......................... */
+/* line 136, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-branding {
+  /* logo */ }
+  /* line 138, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-branding .logo-wrapper {
+    padding: 8% 0;
+    text-align: center; }
+
+/*------------------------- */
+/*  Menu zone */
+/*------------------------- */
+/* line 150, ../sass/pnaomega-alpha-default-fluid.sass */
+.mobile-search-open #zone-menu-wrapper {
+  background: black; }
+
+/*  Menu Region */
+/*......................... */
+/* line 158, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-menu {
+  /* internal menu */ }
+  /* line 161, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-menu .block-menu-internal-menu {
+    float: left;
+    width: 75%; }
+    /* line 166, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-menu .block-menu-internal-menu ul.menu li {
+      overflow: hidden;
+      margin: 0;
+      text-align: center;
+      width: 33%; }
+      /* line 172, ../sass/pnaomega-alpha-default-fluid.sass */
+      #region-menu .block-menu-internal-menu ul.menu li a {
+        font-size: 4em; }
+        /* line 176, ../sass/pnaomega-alpha-default-fluid.sass */
+        #page #region-menu .block-menu-internal-menu ul.menu li a:before {
+          margin: -8px 0 0 0; }
+  /* line 179, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-menu .block-views {
+    height: 60px;
+    float: right;
+    width: 25%;
+    /*hide for external pages */ }
+    /* line 184, ../sass/pnaomega-alpha-default-fluid.sass */
+    .mobile-search-open #region-menu .block-views {
+      position: absolute;
+      width: 100%; }
+      /* line 188, ../sass/pnaomega-alpha-default-fluid.sass */
+      .mobile-search-open #region-menu .block-views h2.block-title {
+        width: 25%; }
+      /* line 191, ../sass/pnaomega-alpha-default-fluid.sass */
+      .mobile-search-open #region-menu .block-views .content {
+        display: block; }
+    /* line 198, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-menu .block-views h2.block-title {
+      cursor: pointer;
+      float: right;
+      font-size: 4em;
+      line-height: 60px;
+      overflow: hidden;
+      height: 60px;
+      text-align: center;
+      width: 100%; }
+      /* line 230, ../sass/_mixins.sass */
+      #region-menu .block-views h2.block-title:before {
+        display: block;
+        height: 18px;
+        font-size: 18px;
+        line-height: 18px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 18px;
+        background: #282e36;
+        color: white;
+        text-align: center;
+        border: 1px solid false;
+        color: white;
+        background-color: #333a45;
+        *zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF333A45', endColorstr='#FF1D2227');
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzM2E0NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333a45), color-stop(50%, #1d2227), color-stop(100%, #1d2227));
+        background-image: -webkit-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -moz-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -o-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -ms-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        border-radius: 3px;
+        display: inline-block;
+        padding: 0.3em;
+        line-height: 21px;
+        margin-top: -3px;
+        margin-right: 21px;
+        -webkit-box-shadow: #07090a 0px 0px 0px 1px;
+        -moz-box-shadow: #07090a 0px 0px 0px 1px;
+        box-shadow: #07090a 0px 0px 0px 1px; }
+        /* line 164, ../../../../all/themes/reach_core/sass/_mixins.sass */
+        #region-menu .block-views h2.block-title:before:hover {
+          text-decoration: none; }
+        /* line 204, ../sass/_mixins.sass */
+        #region-menu .block-views h2.block-title:before:hover {
+          background: #282e36; }
+      /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
+      #region-menu .block-views h2.block-title:before {
+        font-size: 18px;
+        color: white; }
+      /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
+      #page #region-menu .block-views h2.block-title:before {
+        font-size: 18px;
+        color: white; }
+      /* line 210, ../sass/pnaomega-alpha-default-fluid.sass */
+      #page #region-menu .block-views h2.block-title:before {
+        margin: -8px 0 0 0; }
+      /* line 213, ../sass/pnaomega-alpha-default-fluid.sass */
+      .mobile-search-open #region-menu .block-views h2.block-title {
+        background-color: black; }
+    /* line 217, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-menu .block-views .content {
+      background-color: black;
+      clear: both;
+      height: 60px;
+      position: absolute;
+      width: 75%; }
+      /* line 225, ../sass/pnaomega-alpha-default-fluid.sass */
+      #region-menu .block-views .content form {
+        padding: 15px 10px 0; }
+      /* line 228, ../sass/pnaomega-alpha-default-fluid.sass */
+      #region-menu .block-views .content .views-widget-filter-search_api_views_fulltext {
+        padding: 0;
+        width: 80%; }
+        /* line 232, ../sass/pnaomega-alpha-default-fluid.sass */
+        #region-menu .block-views .content .views-widget-filter-search_api_views_fulltext label {
+          display: none; }
+      /* line 237, ../sass/pnaomega-alpha-default-fluid.sass */
+      #region-menu .block-views .content .form-item-search-terms input {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 33px;
+        color: black;
+        background: white !important;
+        padding: 0 10px;
+        -moz-border-radius-topright: 0px;
+        -webkit-border-top-right-radius: 0px;
+        border-top-right-radius: 0px;
+        -moz-border-radius-bottomright: 0px;
+        -webkit-border-bottom-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+        width: 100%; }
+      /* line 251, ../sass/pnaomega-alpha-default-fluid.sass */
+      #region-menu .block-views .content .views-submit-button {
+        padding: 0;
+        width: 20%; }
+        /* line 255, ../sass/pnaomega-alpha-default-fluid.sass */
+        #region-menu .block-views .content .views-submit-button .form-submit {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          display: block;
+          height: 33px;
+          font-size: 1em;
+          line-height: 33px;
+          font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+          font-weight: bold;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          text-decoration: none;
+          width: auto;
+          background: #65cab5;
+          color: white;
+          text-align: center;
+          border: 1px solid #339681;
+          color: white;
+          background-color: #78d1be;
+          *zoom: 1;
+          filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
+          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+          background-size: 100%;
+          background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
+          background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+          background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+          background-image: -o-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+          background-image: -ms-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+          background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          -ms-border-radius: 3px;
+          -o-border-radius: 3px;
+          border-radius: 3px;
+          border-radius: 3px;
+          -moz-border-radius-topleft: 0px;
+          -webkit-border-top-left-radius: 0px;
+          border-top-left-radius: 0px;
+          -moz-border-radius-bottomleft: 0px;
+          -webkit-border-bottom-left-radius: 0px;
+          border-bottom-left-radius: 0px;
+          margin: 0;
+          padding: 0;
+          width: 100%; }
+          /* line 164, ../../../../all/themes/reach_core/sass/_mixins.sass */
+          #region-menu .block-views .content .views-submit-button .form-submit:hover {
+            text-decoration: none; }
+          /* line 204, ../sass/_mixins.sass */
+          #region-menu .block-views .content .views-submit-button .form-submit:hover {
+            background: #65cab5; }
+
+/*------------------------- */
+/*  Header zone */
+/*------------------------- */
+/*  Header First Region */
+/*......................... */
+/*  Header Second Region */
+/*......................... */
+/************************* */
+/*  CONTENT SECTION */
+/************************ */
+/*------------------------- */
+/*  Preface zone */
+/*------------------------- */
+/*  Preface First Region */
+/*......................... */
+/*  Preface Second Region */
+/*......................... */
+/*  Preface Third Region */
+/*......................... */
+/*------------------------- */
+/*  Content zone */
+/*------------------------- */
+/* Layout manipulation for full width */
+/*......................... */
+/* line 326, ../sass/pnaomega-alpha-default-fluid.sass */
+body.not-front.external-section #page #zone-content {
+  padding-top: 100px; }
+/* line 329, ../sass/pnaomega-alpha-default-fluid.sass */
+body.not-front.external-section #page #region-sidebar-first,
+body.not-front.external-section #page #region-sidebar-second,
+body.not-front.external-section #page #region-content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0;
+  width: 100%; }
+/* line 339, ../sass/pnaomega-alpha-default-fluid.sass */
+body.not-front.external-section #page #region-content {
+  background: white;
+  float: left;
+  padding-bottom: 100px; }
+  /* line 344, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.not-front.external-section #page #region-content .region-content-inner {
+    background: white;
+    margin-top: -60px; }
+
+/*  Sidebar First Region */
+/*......................... */
+/*  Content Region */
+/*......................... */
+/* line 359, ../sass/pnaomega-alpha-default-fluid.sass */
+body.html #page #zone-content #region-content .pane-page-messages {
+  padding: 0 0 30px 0;
+  margin: 0; }
+/* line 363, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-content .region-content-inner {
+  /* reset to default to blog nodes */ }
+  /* line 366, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.alternate-content-layout.node-type-blog #page #region-content .region-content-inner {
+    background-color: white; }
+
+/*  Sidebar Second Region */
+/*......................... */
+/* line 374, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-sidebar-second {
+  /* secondary menu */ }
+
+/*------------------------- */
+/*  Postscript zone */
+/*------------------------- */
+/*  Postscript First Region */
+/*......................... */
+/*  Postscript Second Region */
+/*......................... */
+/*  Postscript Third Region */
+/*......................... */
+/*  Postscript Fourth Region */
+/*......................... */
+/*------------------------- */
+/*  Twitter Block */
+/*------------------------- */
+/* line 414, ../sass/pnaomega-alpha-default-fluid.sass */
+.block-twitter-0 {
+  padding-top: 30px; }
+  /* line 419, ../sass/pnaomega-alpha-default-fluid.sass */
+  .block-twitter-0 .tweets-pulled-listing h2 {
+    margin-left: 80px;
+    margin-bottom: 30px; }
+  /* line 425, ../sass/pnaomega-alpha-default-fluid.sass */
+  .block-twitter-0 .tweets-pulled-listing li {
+    margin-bottom: 30px; }
+
+/************************* */
+/*  FOOTER SECTION */
+/************************ */
+/*------------------------- */
+/*  Footer zone */
+/*------------------------- */
+/* line 441, ../sass/pnaomega-alpha-default-fluid.sass */
+#zone-footer-wrapper {
+  border-bottom-width: 80px; }
+
+/*  Footer First Region */
+/*......................... */
+/* line 448, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-footer-first {
+  padding-top: 20px;
+  padding-bottom: 112px;
+  /*main menu in footer */
+  /* sign up block */
+  /* social Links */ }
+  /* line 460, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-footer-first .block-webform h2.block-title {
+    margin-top: 7px; }
+  /* line 464, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-footer-first .block-webform form .form-item {
+    width: 65%; }
+  /* line 467, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-footer-first .block-webform form .form-actions {
+    width: 35%; }
+    /* line 470, ../sass/pnaomega-alpha-default-fluid.sass */
+    #region-footer-first .block-webform form .form-actions .form-submit {
+      width: 100%; }
+  /* line 474, ../sass/pnaomega-alpha-default-fluid.sass */
+  #region-footer-first .block-reach-social-blocks {
+    bottom: 40px; }
+
+/*  Footer Second Region */
+/*......................... */
+/* line 482, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-footer-second .region-inner {
+  height: 80px;
+  bottom: -80px; }
+/* line 486, ../sass/pnaomega-alpha-default-fluid.sass */
+#region-footer-second .page-element,
+#region-footer-second .block {
+  line-height: 40px; }
+
+/************************* */
+/* MAIN MENU */
+/************************ */
+/************************* */
+/*  NODES */
+/************************ */
+/* line 500, ../sass/pnaomega-alpha-default-fluid.sass */
+.node {
+  /*------------------------- */
+  /*  Full node */
+  /*------------------------- */
+  /*------------------------- */
+  /*  Teaser node */
+  /*------------------------- */
+  /*------------------------- */
+  /*  Page node */
+  /*------------------------- */ }
+
+/*------------------------- */
+/*  Blog node + Panels Blog */
+/*------------------------- */
+/* line 531, ../sass/pnaomega-alpha-default-fluid.sass */
+body.node-type-blog #block-system-main.node-teaser .field-name-body,
+body.node-type-blog #block-system-main .panel-display .field-name-body,
+.node-blog.node-teaser .field-name-body,
+.node-blog .panel-display .field-name-body {
+  margin-bottom: 40px; }
+/* line 536, ../sass/pnaomega-alpha-default-fluid.sass */
+.views-row body.node-type-blog #block-system-main.node-teaser, .attachment-before .views-row.views-row-last body.node-type-blog #block-system-main.node-teaser, .views-row
+.node-blog.node-teaser, .attachment-before .views-row.views-row-last
+.node-blog.node-teaser {
+  margin-bottom: 50px; }
+/* line 540, ../sass/pnaomega-alpha-default-fluid.sass */
+.views-row.views-row-last body.node-type-blog #block-system-main.node-teaser, .views-row.views-row-last
+.node-blog.node-teaser {
+  margin-bottom: 0; }
+/* line 545, ../sass/pnaomega-alpha-default-fluid.sass */
+body.node-type-blog #block-system-main.node-teaser .field-name-taxonomy-alter-for-blog-listing,
+.node-blog.node-teaser .field-name-taxonomy-alter-for-blog-listing {
+  display: block;
+  height: 20px;
+  margin-top: 10px; }
+/* line 556, ../sass/pnaomega-alpha-default-fluid.sass */
+body.node-type-blog #block-system-main ul.links li.facebook, body.node-type-blog #block-system-main ul.links li.twitter, body.node-type-blog #block-system-main ul.links li.google,
+.node-blog ul.links li.facebook,
+.node-blog ul.links li.twitter,
+.node-blog ul.links li.google {
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  width: 33%; }
+/* line 564, ../sass/pnaomega-alpha-default-fluid.sass */
+body.node-type-blog #block-system-main ul.links li.disqus_comments_num,
+.node-blog ul.links li.disqus_comments_num {
+  display: none; }
+/* line 567, ../sass/pnaomega-alpha-default-fluid.sass */
+body.node-type-blog #block-system-main .pane-disqus-disqus-comments,
+.node-blog .pane-disqus-disqus-comments {
+  display: none; }
+
+/*------------------------- */
+/*  Form node + Panels BForm */
+/*------------------------- */
+/* line 577, ../sass/pnaomega-alpha-default-fluid.sass */
+body.node-type-form #block-system-main .pane-node-webform .form-item {
+  margin: 10px 20px; }
+
+/************************* */
+/*  DISPLAY SUITE */
+/************************ */
+/* line 588, ../sass/pnaomega-alpha-default-fluid.sass */
+.ds-2col .group-left,
+.ds-2col .group-right {
+  clear: none; }
+
+/* 3 column layout */
+/************************* */
+/*  VIEWS */
+/************************ */
+/************************* */
+/* MENUS */
+/************************ */
+/************************* */
+/*  PANELS */
+/************************ */
+/* Panels team members */
+/* line 618, ../sass/pnaomega-alpha-default-fluid.sass */
+.pane-bundle-person {
+  margin-bottom: 25px; }
+  /* line 622, ../sass/pnaomega-alpha-default-fluid.sass */
+  .pane-bundle-person .field-name-field-content-media {
+    padding-bottom: 20px;
+    text-align: center; }
+
+/* line 629, ../sass/pnaomega-alpha-default-fluid.sass */
+.panel-display .panel-2col, .panel-display.panel-2col-stacked {
+  /* reset columns */ }
+  /* line 632, ../sass/pnaomega-alpha-default-fluid.sass */
+  .panel-display .panel-2col .panel-col-first,
+  .panel-display .panel-2col .panel-col-last, .panel-display.panel-2col-stacked .panel-col-first, .panel-display.panel-2col-stacked .panel-col-last {
+    float: none;
+    width: 100%; }
+
+/************************* */
+/*  BLOCKS */
+/************************ */
+/* line 642, ../sass/pnaomega-alpha-default-fluid.sass */
+.block {
+  /*------------------------- */
+  /*  Custom Blocks */
+  /*------------------------- */ }
+
+/************************* */
+/*  FRONT PAGES (EXTERNAL + INTERNAL) */
+/************************ */
+/* line 655, ../sass/pnaomega-alpha-default-fluid.sass */
+body.front,
+body.internal-front-page {
+  /* center messages + top level panes */
+  /* latest blog section + recent research */ }
+  /* line 657, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front #zone-content-wrapper,
+  body.internal-front-page #zone-content-wrapper {
+    padding-bottom: 0; }
+  /* line 661, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front #zone-content .pane-page-messages,
+  body.internal-front-page #zone-content .pane-page-messages {
+    margin: 0 10px !important;
+    width: auto; }
+  /* line 666, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-page-messages,
+  body.front .panel-pane.pane-panels-mini > .pane-content,
+  body.internal-front-page .pane-page-messages,
+  body.internal-front-page .panel-pane.pane-panels-mini > .pane-content {
+    padding-bottom: 90px;
+    /* Panels slideshow widget */ }
+  /* line 671, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-external-home-page-research,
+  body.front .pane-internal-home-page-research,
+  body.internal-front-page .pane-external-home-page-research,
+  body.internal-front-page .pane-internal-home-page-research {
+    /* slide pager */ }
+    /* line 674, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-research .views_slideshow_cycle_main,
+    body.front .pane-internal-home-page-research .views_slideshow_cycle_main,
+    body.internal-front-page .pane-external-home-page-research .views_slideshow_cycle_main,
+    body.internal-front-page .pane-internal-home-page-research .views_slideshow_cycle_main {
+      padding-top: 30px;
+      width: 100%; }
+    /* line 678, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame,
+    body.front .pane-internal-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame,
+    body.internal-front-page .pane-external-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame,
+    body.internal-front-page .pane-internal-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame {
+      width: 100% !important;
+      height: auto; }
+    /* line 682, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row,
+    body.front .pane-internal-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row,
+    body.internal-front-page .pane-external-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row,
+    body.internal-front-page .pane-internal-home-page-research .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row {
+      width: 100% !important;
+      height: auto; }
+    /* line 686, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-research .views_slideshow_cycle_main .field-content,
+    body.front .pane-internal-home-page-research .views_slideshow_cycle_main .field-content,
+    body.internal-front-page .pane-external-home-page-research .views_slideshow_cycle_main .field-content,
+    body.internal-front-page .pane-internal-home-page-research .views_slideshow_cycle_main .field-content {
+      max-width: 100%;
+      width: 100%; }
+    /* line 690, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-research .field-name-field-slideshow-link,
+    body.front .pane-internal-home-page-research .field-name-field-slideshow-link,
+    body.internal-front-page .pane-external-home-page-research .field-name-field-slideshow-link,
+    body.internal-front-page .pane-internal-home-page-research .field-name-field-slideshow-link {
+      padding-top: 30px; }
+    /* line 694, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-research .views-slideshow-controls-bottom,
+    body.front .pane-internal-home-page-research .views-slideshow-controls-bottom,
+    body.internal-front-page .pane-external-home-page-research .views-slideshow-controls-bottom,
+    body.internal-front-page .pane-internal-home-page-research .views-slideshow-controls-bottom {
+      top: 0; }
+      /* line 697, ../sass/pnaomega-alpha-default-fluid.sass */
+      body.front .pane-external-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item,
+      body.front .pane-internal-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item,
+      body.internal-front-page .pane-external-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item,
+      body.internal-front-page .pane-internal-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item {
+        margin: 0 15px 0 0;
+        display: block;
+        height: 10px;
+        font-size: 1em;
+        line-height: 10px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 40px; }
+        /* line 164, ../../../../all/themes/reach_core/sass/_mixins.sass */
+        body.front .pane-external-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover,
+        body.front .pane-internal-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover,
+        body.internal-front-page .pane-external-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover,
+        body.internal-front-page .pane-internal-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover {
+          text-decoration: none; }
+  /* line 706, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-external-home-page-latest > .pane-content,
+  body.front .pane-internal-home-page-latest > .pane-content,
+  body.internal-front-page .pane-external-home-page-latest > .pane-content,
+  body.internal-front-page .pane-internal-home-page-latest > .pane-content {
+    padding-bottom: 60px; }
+  /* line 710, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-external-home-page-latest .views-row,
+  body.front .pane-internal-home-page-latest .views-row,
+  body.internal-front-page .pane-external-home-page-latest .views-row,
+  body.internal-front-page .pane-internal-home-page-latest .views-row {
+    margin-bottom: 30px; }
+    /* line 713, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-latest .views-row.views-row-last,
+    body.front .pane-internal-home-page-latest .views-row.views-row-last,
+    body.internal-front-page .pane-external-home-page-latest .views-row.views-row-last,
+    body.internal-front-page .pane-internal-home-page-latest .views-row.views-row-last {
+      margin-bottom: 0; }
+  /* line 718, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-external-home-page-latest .node .field-name-body,
+  body.front .pane-internal-home-page-latest .node .field-name-body,
+  body.internal-front-page .pane-external-home-page-latest .node .field-name-body,
+  body.internal-front-page .pane-internal-home-page-latest .node .field-name-body {
+    height: auto !important; }
+
+/************************* */
+/* EXTERNAL FRONT PAGE */
+/************************ */
+/* line 726, ../sass/pnaomega-alpha-default-fluid.sass */
+body.front {
+  /* "the map is changing" section */ }
+  /* line 727, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front #zone-content {
+    padding-top: 35px; }
+    /* line 730, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front #zone-content .pane-bundle-image-media {
+      width: 234px;
+      height: 41px;
+      display: block;
+      text-indent: -1000em;
+      overflow: hidden;
+      background-image: url(../images/pna-mobile.png);
+      background-position: 0 0;
+      background-repeat: no-repeat; }
+      /* line 733, ../sass/pnaomega-alpha-default-fluid.sass */
+      body.front #zone-content .pane-bundle-image-media img {
+        display: none; }
+  /* line 737, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-external-home-page-header {
+    /* "the map is changing" text */ }
+    /* line 740, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.front .pane-external-home-page-header h2 {
+      margin-top: 20px;
+      line-height: 1.1em; }
+  /* line 744, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.front .pane-bundle-quick-links.login-link {
+    display: none; }
+
+/************************* */
+/* BLOG LISTINGS AND BLOG POSTS */
+/************************ */
+/* line 767, ../sass/pnaomega-alpha-default-fluid.sass */
+body.context-latest .view-search-api-blog-list .view-empty,
+body.alternate-content-layout.node-type-blog .view-search-api-blog-list .view-empty {
+  min-height: 300px; }
+
+/******************************* */
+/* RESEARCH LISTING AND BOOKMARKS */
+/***************************** */
+/* line 775, ../sass/pnaomega-alpha-default-fluid.sass */
+body.page-research-bookmarks,
+body.page-research-database,
+body.node-type-research-political,
+body.node-type-research-nonprofit {
+  /* filters */ }
+  /* line 780, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #zone-content,
+  body.page-research-database #zone-content,
+  body.node-type-research-political #zone-content,
+  body.node-type-research-nonprofit #zone-content {
+    background: white;
+    padding-top: 10px; }
+  /* line 787, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #region-preface-first .block h2.block-title,
+  body.page-research-database #region-preface-first .block h2.block-title,
+  body.node-type-research-political #region-preface-first .block h2.block-title,
+  body.node-type-research-nonprofit #region-preface-first .block h2.block-title {
+    cursor: pointer;
+    line-height: 45px;
+    font-size: 1em;
+    text-align: right; }
+  /* line 795, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #region-preface-first .block .content,
+  body.page-research-database #region-preface-first .block .content,
+  body.node-type-research-political #region-preface-first .block .content,
+  body.node-type-research-nonprofit #region-preface-first .block .content {
+    display: none;
+    padding-bottom: 40px; }
+  /* line 801, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #region-preface-first .block form .views-exposed-widget,
+  body.page-research-database #region-preface-first .block form .views-exposed-widget,
+  body.node-type-research-political #region-preface-first .block form .views-exposed-widget,
+  body.node-type-research-nonprofit #region-preface-first .block form .views-exposed-widget {
+    width: 44%; }
+    /* line 804, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.page-research-bookmarks #region-preface-first .block form .views-exposed-widget .select2-container,
+    body.page-research-database #region-preface-first .block form .views-exposed-widget .select2-container,
+    body.node-type-research-political #region-preface-first .block form .views-exposed-widget .select2-container,
+    body.node-type-research-nonprofit #region-preface-first .block form .views-exposed-widget .select2-container {
+      max-width: 100%; }
+  /* line 807, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #region-preface-first .block form .views-widget-filter-field_research_demographic_tid,
+  body.page-research-bookmarks #region-preface-first .block form .views-widget-filter-field_research_state_tid,
+  body.page-research-database #region-preface-first .block form .views-widget-filter-field_research_demographic_tid,
+  body.page-research-database #region-preface-first .block form .views-widget-filter-field_research_state_tid,
+  body.node-type-research-political #region-preface-first .block form .views-widget-filter-field_research_demographic_tid,
+  body.node-type-research-political #region-preface-first .block form .views-widget-filter-field_research_state_tid,
+  body.node-type-research-nonprofit #region-preface-first .block form .views-widget-filter-field_research_demographic_tid,
+  body.node-type-research-nonprofit #region-preface-first .block form .views-widget-filter-field_research_state_tid {
+    clear: left; }
+  /* line 811, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #region-preface-first .block form .views-widget-filter-field_research_issue_tid,
+  body.page-research-bookmarks #region-preface-first .block form .views-exposed-widget views-widget-filter-field_research_type_tid,
+  body.page-research-database #region-preface-first .block form .views-widget-filter-field_research_issue_tid,
+  body.page-research-database #region-preface-first .block form .views-exposed-widget views-widget-filter-field_research_type_tid,
+  body.node-type-research-political #region-preface-first .block form .views-widget-filter-field_research_issue_tid,
+  body.node-type-research-political #region-preface-first .block form .views-exposed-widget views-widget-filter-field_research_type_tid,
+  body.node-type-research-nonprofit #region-preface-first .block form .views-widget-filter-field_research_issue_tid,
+  body.node-type-research-nonprofit #region-preface-first .block form .views-exposed-widget views-widget-filter-field_research_type_tid {
+    clear: right; }
+  /* line 815, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks #region-preface-first .block form .views-submit-button,
+  body.page-research-database #region-preface-first .block form .views-submit-button,
+  body.node-type-research-political #region-preface-first .block form .views-submit-button,
+  body.node-type-research-nonprofit #region-preface-first .block form .views-submit-button {
+    clear: both; }
+  /* line 825, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks.mobile-research-filter-open #region-preface-first .block .content,
+  body.page-research-database.mobile-research-filter-open #region-preface-first .block .content,
+  body.node-type-research-political.mobile-research-filter-open #region-preface-first .block .content,
+  body.node-type-research-nonprofit.mobile-research-filter-open #region-preface-first .block .content {
+    display: block; }
+  /* line 829, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks .panel-display,
+  body.page-research-database .panel-display,
+  body.node-type-research-political .panel-display,
+  body.node-type-research-nonprofit .panel-display {
+    padding-bottom: 60px; }
+    /* line 835, ../sass/pnaomega-alpha-default-fluid.sass */
+    body.page-research-bookmarks .panel-display .panel-col-last,
+    body.page-research-database .panel-display .panel-col-last,
+    body.node-type-research-political .panel-display .panel-col-last,
+    body.node-type-research-nonprofit .panel-display .panel-col-last {
+      display: none; }
+  /* line 841, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks .pane-research-panel-pane-1 .views-row,
+  body.page-research-bookmarks .pane-research-panel-pane-1 .view-empty,
+  body.page-research-bookmarks .pane-flag-bookmarks-panel-pane-1 .views-row,
+  body.page-research-bookmarks .pane-flag-bookmarks-panel-pane-1 .view-empty,
+  body.page-research-bookmarks .pane-bookmarks-panel-pane-1 .views-row,
+  body.page-research-bookmarks .pane-bookmarks-panel-pane-1 .view-empty,
+  body.page-research-database .pane-research-panel-pane-1 .views-row,
+  body.page-research-database .pane-research-panel-pane-1 .view-empty,
+  body.page-research-database .pane-flag-bookmarks-panel-pane-1 .views-row,
+  body.page-research-database .pane-flag-bookmarks-panel-pane-1 .view-empty,
+  body.page-research-database .pane-bookmarks-panel-pane-1 .views-row,
+  body.page-research-database .pane-bookmarks-panel-pane-1 .view-empty,
+  body.node-type-research-political .pane-research-panel-pane-1 .views-row,
+  body.node-type-research-political .pane-research-panel-pane-1 .view-empty,
+  body.node-type-research-political .pane-flag-bookmarks-panel-pane-1 .views-row,
+  body.node-type-research-political .pane-flag-bookmarks-panel-pane-1 .view-empty,
+  body.node-type-research-political .pane-bookmarks-panel-pane-1 .views-row,
+  body.node-type-research-political .pane-bookmarks-panel-pane-1 .view-empty,
+  body.node-type-research-nonprofit .pane-research-panel-pane-1 .views-row,
+  body.node-type-research-nonprofit .pane-research-panel-pane-1 .view-empty,
+  body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .views-row,
+  body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .view-empty,
+  body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .views-row,
+  body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .view-empty {
+    padding: 20px 10px; }
+  /* line 846, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-research-bookmarks .pane-research-panel-pane-1 .views-field-title,
+  body.page-research-bookmarks .pane-flag-bookmarks-panel-pane-1 .views-field-title,
+  body.page-research-bookmarks .pane-bookmarks-panel-pane-1 .views-field-title,
+  body.page-research-database .pane-research-panel-pane-1 .views-field-title,
+  body.page-research-database .pane-flag-bookmarks-panel-pane-1 .views-field-title,
+  body.page-research-database .pane-bookmarks-panel-pane-1 .views-field-title,
+  body.node-type-research-political .pane-research-panel-pane-1 .views-field-title,
+  body.node-type-research-political .pane-flag-bookmarks-panel-pane-1 .views-field-title,
+  body.node-type-research-political .pane-bookmarks-panel-pane-1 .views-field-title,
+  body.node-type-research-nonprofit .pane-research-panel-pane-1 .views-field-title,
+  body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .views-field-title,
+  body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .views-field-title {
+    padding-right: 95px; }
+
+/************************* */
+/* SEARCH PAGE */
+/************************ */
+/* line 854, ../sass/pnaomega-alpha-default-fluid.sass */
+body.page-search #zone-content {
+  padding-top: 25px !important; }
+/* line 857, ../sass/pnaomega-alpha-default-fluid.sass */
+body.page-search #region-sidebar-second {
+  padding-bottom: 52px; }
+  /* line 864, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-search #region-sidebar-second .block h2.block-title,
+  body.page-search #region-sidebar-second .views-widget-sort-by label,
+  body.page-search #region-sidebar-second .views-widget-sort-order label {
+    background: transparent;
+    padding-left: 0 !important; }
+/* line 872, ../sass/pnaomega-alpha-default-fluid.sass */
+body.page-search #views-exposed-form-full-site-search-panel-pane-1 .views-widget-filter-search_api_views_fulltext {
+  width: 65%; }
+  /* line 875, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-search #views-exposed-form-full-site-search-panel-pane-1 .views-widget-filter-search_api_views_fulltext .form-item-search-terms {
+    max-width: 100%; }
+/* line 878, ../sass/pnaomega-alpha-default-fluid.sass */
+body.page-search #views-exposed-form-full-site-search-panel-pane-1 .views-submit-button {
+  width: 35%; }
+  /* line 881, ../sass/pnaomega-alpha-default-fluid.sass */
+  body.page-search #views-exposed-form-full-site-search-panel-pane-1 .views-submit-button .form-submit {
+    width: 100%; }

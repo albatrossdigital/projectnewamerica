@@ -1,0 +1,692 @@
+/* line 499, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+#page .item-list ul.pager li.pager-previous a:before {
+  content: "\f053"; }
+
+/* line 502, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+#page .item-list ul.pager li.pager-next a:before {
+  content: "\f054"; }
+
+/* line 628, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+ul.links li.twitter a:before {
+  content: "\f081"; }
+
+/* line 631, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+ul.links li.facebook a:before {
+  content: "\f082"; }
+
+/* line 826, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+ul.links li.google a:before {
+  content: "\f0d4"; }
+
+/* line 898, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+#page .item-list ul.pager li.pager-next a:before, #page .item-list ul.pager li.pager-previous a:before, ul.links li.facebook a:before, ul.links li.twitter a:before, ul.links li.google a:before {
+  font-family: FontAwesome !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  display: inline-block;
+  text-decoration: inherit !important;
+  vertical-align: middle !important; }
+
+/* line 52, icons/*.png */
+.icons-sprite, .icons-facebook, .icons-twitter {
+  background: url('../images/icons-sf21d8d09e9.png') no-repeat; }
+
+/* line 63, /var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook {
+  background-position: 0 -78px; }
+
+/* line 63, /var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 0; }
+
+/* Main sprite function assumes text is being replaced */
+/* Helper sprite does background position */
+/* line 297, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+.item-list ul.pager li.pager-first, .item-list ul.pager li.pager-last, .item-list ul.pager li.pager-ellipsis {
+  display: none; }
+
+/* line 300, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+h2 {
+  color: #0092d2; }
+
+/* line 309, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+h1 {
+  color: white; }
+
+/* line 322, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+h1 {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+/* line 328, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+ul.links li.facebook a, ul.links li.twitter a, ul.links li.google a {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif; }
+
+/************************* */
+/*  BODY */
+/************************ */
+/* Handy font size definitions
+ * font-size: .625em;   16px x .625   = 10px
+ * font-size: .6875em;  16px x .6875  = 11px
+ * font-size: .75em;    16px x .75    = 12px
+ * font-size: .8125em;  16px x .8125  = 13px
+ * font-size: .875em;   16px x .875   = 14px
+ * font-size: .9375em;  16px x .9375  = 15px
+ * font-size: 1.0625em; 16px x 1.0625 = 17px
+ * font-size: 1.5em;    16px x 1.5    = 24px */
+/* Font Awsome import */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../../../../all/libraries/Font-Awesome/font/fontawesome-webfont.eot");
+  src: url("../../../../all/libraries/Font-Awesome/font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("../../../../all/libraries/Font-Awesome/font/fontawesome-webfont.woff") format("woff"), url("../../../../all/libraries/Font-Awesome/font/fontawesome-webfont.ttf") format("truetype"), url("../../../../all/libraries/Font-Awesome/font/fontawesome-webfont.svg#FontAwesomeRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/* line 21, ../sass/global.sass */
+body {
+  font-size: 0.875em; }
+  /* line 24, ../sass/global.sass */
+  body #page {
+    font-family: Georgia, Constantia, "Lucida Bright", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", serif;
+    line-height: 1.9em; }
+    /* line 29, ../sass/global.sass */
+    body #page.clearfix:after {
+      display: none; }
+
+/************************* */
+/*  LINKS */
+/************************ */
+/* line 38, ../sass/global.sass */
+a:link, a:visited {
+  color: #00a187;
+  text-decoration: none; }
+
+/************************* */
+/*  TEXT */
+/************************ */
+/************************* */
+/*  TITLES */
+/************************ */
+/* line 59, ../sass/global.sass */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.4em; }
+
+/* line 62, ../sass/global.sass */
+h1 {
+  font-size: 2.2em;
+  padding: 0;
+  margin: 0; }
+  /* line 69, ../sass/global.sass */
+  h1 a,
+  h1 a:hover {
+    text-decoration: none; }
+
+/* line 73, ../sass/global.sass */
+h2 {
+  font-size: 1.7em;
+  margin-bottom: 0.25em; }
+
+/* line 79, ../sass/global.sass */
+h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.25em; }
+
+/* line 83, ../sass/global.sass */
+h4 {
+  font-size: 1.3em;
+  margin-bottom: 0.25em; }
+
+/* line 87, ../sass/global.sass */
+h5 {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 0; }
+
+/* line 92, ../sass/global.sass */
+h6 {
+  font-size: 1em;
+  font-weight: bold; }
+
+/*------------------------- */
+/*  Block title */
+/*------------------------- */
+/************************* */
+/*  IMGS + MEDIA */
+/************************ */
+/* line 108, ../sass/global.sass */
+img {
+  height: auto;
+  max-width: 100%; }
+  /* line 112, ../sass/global.sass */
+  .field-type-media img, .pane-node-field-content-media img, .field-type-text-with-summary img {
+    margin: 0 auto 20px auto;
+    display: block; }
+
+/************************* */
+/*  LISTS */
+/************************ */
+/* line 125, ../sass/global.sass */
+.node ol,
+.node ul {
+  padding-left: 2em; }
+
+/************************* */
+/*  SYSTEM TABS */
+/************************ */
+/* line 134, ../sass/global.sass */
+#tabs {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 20px; }
+  /* line 138, ../sass/global.sass */
+  #tabs:empty {
+    display: none; }
+
+/* line 141, ../sass/global.sass */
+#tabs ul.primary {
+  padding: 0 3px;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+  background: transparent url(../images/tabs-border.png) repeat-x left bottom; }
+
+/* line 148, ../sass/global.sass */
+#tabs ul.primary li {
+  display: block;
+  float: left;
+  vertical-align: bottom;
+  margin: 0 5px 0 0; }
+
+/* line 154, ../sass/global.sass */
+#tabs ul.primary li.active a {
+  border-bottom: 1px solid white; }
+
+/* line 157, ../sass/global.sass */
+#tabs ul.primary li a {
+  color: black;
+  background-color: #ededed;
+  height: 1.8em;
+  line-height: 1.9;
+  display: block;
+  font-size: 0.929em;
+  float: left;
+  padding: 0 10px 3px;
+  margin: 0;
+  text-shadow: 0 1px 0 white;
+  -khtml-border-radius-topleft: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -khtml-border-radius-topright: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px; }
+
+/* line 177, ../sass/global.sass */
+#tabs ul.primary li.active a {
+  background-color: white; }
+
+/* line 180, ../sass/global.sass */
+#tabs ul.secondary {
+  border-bottom: none;
+  padding: 0.5em 0; }
+
+/* line 184, ../sass/global.sass */
+#tabs ul.secondary li {
+  display: block;
+  float: left; }
+
+/* line 188, ../sass/global.sass */
+#tabs ul.secondary li:last-child {
+  border-right: none; }
+
+/* line 191, ../sass/global.sass */
+#tabs ul.secondary li:first-child {
+  padding-left: 0; }
+
+/* line 194, ../sass/global.sass */
+#tabs ul.secondary li a {
+  padding: 0.25em 0.5em; }
+
+/* line 197, ../sass/global.sass */
+#tabs ul.secondary li a.active {
+  background: #f2f2f2;
+  border-bottom: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px; }
+
+/************************* */
+/*  TABLES */
+/************************ */
+/* line 209, ../sass/global.sass */
+table {
+  font-size: 0.923em;
+  margin: 0 0 10px;
+  border: 1px solid #bebfb9; }
+
+/************************* */
+/*  FORMS */
+/************************ */
+/* line 219, ../sass/global.sass */
+textarea,
+select,
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"] {
+  font-family: Georgia, Constantia, "Lucida Bright", "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", serif;
+  max-width: 100%;
+  border-color: #d7d7d7; }
+
+/* line 242, ../sass/global.sass */
+select,
+input.form-text {
+  height: 32px;
+  padding: 4px 10px;
+  margin: 0; }
+
+/* line 248, ../sass/global.sass */
+select {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(50%, #f9f9f9), color-stop(100%, #e5e5e5));
+  background-image: -webkit-linear-gradient(#ffffff 0%, #f9f9f9 50%, #e5e5e5 100%);
+  background-image: -moz-linear-gradient(#ffffff 0%, #f9f9f9 50%, #e5e5e5 100%);
+  background-image: -o-linear-gradient(#ffffff 0%, #f9f9f9 50%, #e5e5e5 100%);
+  background-image: -ms-linear-gradient(#ffffff 0%, #f9f9f9 50%, #e5e5e5 100%);
+  background-image: linear-gradient(#ffffff 0%, #f9f9f9 50%, #e5e5e5 100%); }
+
+/* submits */
+/* line 253, ../sass/global.sass */
+button,
+input[type="reset"],
+input[type="submit"],
+input[type="button"],
+a.buttonize,
+.buttonize .pane-content a {
+  display: block;
+  height: 32px;
+  font-size: 1em;
+  line-height: 32px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: auto;
+  background: #515a60;
+  color: white;
+  text-align: center;
+  border: 1px solid #222629;
+  color: white;
+  background-color: #5d676e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF5D676E', endColorstr='#FF454D52');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVkNjc2ZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNDU0ZDUyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNDU0ZDUyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d676e), color-stop(50%, #454d52), color-stop(100%, #454d52));
+  background-image: -webkit-linear-gradient(#5d676e, #454d52 50%, #454d52 100%);
+  background-image: -moz-linear-gradient(#5d676e, #454d52 50%, #454d52 100%);
+  background-image: -o-linear-gradient(#5d676e, #454d52 50%, #454d52 100%);
+  background-image: -ms-linear-gradient(#5d676e, #454d52 50%, #454d52 100%);
+  background-image: linear-gradient(#5d676e, #454d52 50%, #454d52 100%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-radius: 3px; }
+  /* line 164, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  button:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  input[type="button"]:hover,
+  a.buttonize:hover,
+  .buttonize .pane-content a:hover {
+    text-decoration: none; }
+  /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+  button:hover,
+  input[type="reset"]:hover,
+  input[type="submit"]:hover,
+  input[type="button"]:hover,
+  a.buttonize:hover,
+  .buttonize .pane-content a:hover {
+    background: #515a60; }
+
+/* line 261, ../sass/global.sass */
+a.buttonize-darker {
+  display: block;
+  height: 32px;
+  font-size: 1em;
+  line-height: 32px;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: auto;
+  background: #333940;
+  color: white;
+  text-align: center;
+  border: 1px solid #060607;
+  color: white;
+  background-color: #3e464e;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF3E464E', endColorstr='#FF282C32');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzNlNDY0ZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMjgyYzMyIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjgyYzMyIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3e464e), color-stop(50%, #282c32), color-stop(100%, #282c32));
+  background-image: -webkit-linear-gradient(#3e464e, #282c32 50%, #282c32 100%);
+  background-image: -moz-linear-gradient(#3e464e, #282c32 50%, #282c32 100%);
+  background-image: -o-linear-gradient(#3e464e, #282c32 50%, #282c32 100%);
+  background-image: -ms-linear-gradient(#3e464e, #282c32 50%, #282c32 100%);
+  background-image: linear-gradient(#3e464e, #282c32 50%, #282c32 100%);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  border-radius: 3px;
+  padding: 0 20px; }
+  /* line 164, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  a.buttonize-darker:hover {
+    text-decoration: none; }
+  /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+  a.buttonize-darker:hover {
+    background: #333940; }
+
+/* line 266, ../sass/global.sass */
+html.js input.form-autocomplete {
+  background-image: url(../images/throbber-inactive.gif);
+  background-position: 99% 9.5px;
+  background-repeat: no-repeat; }
+
+/* line 269, ../sass/global.sass */
+html.js input.throbbing {
+  background-image: url(../images/throbber-active.gif);
+  background-position: 99% 9.5px;
+  background-repeat: no-repeat; }
+
+/* line 272, ../sass/global.sass */
+form {
+  /* infield labels */
+  /* horizontal styles */
+  /* fb connect */ }
+  /* line 281, ../sass/global.sass */
+  form fieldset legend,
+  form fieldset label {
+    font-weight: bold; }
+  /* line 285, ../sass/global.sass */
+  form .form-actions {
+    overflow: auto; }
+  /* line 290, ../sass/global.sass */
+  form.infieldlabels label.processed {
+    color: #515a60;
+    line-height: 32px;
+    font-size: 1em;
+    font-style: normal; }
+  /* line 309, ../sass/global.sass */
+  form.fbconnect-form {
+    padding-top: 0; }
+  /* line 312, ../sass/global.sass */
+  form .fbconnect-wrapper {
+    display: none !important; }
+
+/************************* */
+/*  MESSAGES */
+/************************ */
+/* line 331, ../sass/global.sass */
+#messages {
+  display: block;
+  float: none;
+  width: auto;
+  margin: 0;
+  /* &.grid-8
+   *   width: grid-width(8) - 60 */ }
+
+/************************* */
+/*  PAGER */
+/************************ */
+/* line 347, ../sass/global.sass */
+.item-list ul.pager {
+  float: right; }
+  /* line 245, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  .item-list ul.pager, .item-list ul.pager ul, .item-list ul.pager li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none; }
+  /* line 255, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  .item-list ul.pager > li {
+    margin: 0 10px;
+    float: left; }
+  /* line 351, ../sass/global.sass */
+  #page .item-list ul.pager {
+    margin-top: 35px; }
+  /* line 354, ../sass/global.sass */
+  .item-list ul.pager li {
+    font-weight: normal;
+    margin: 0 0 5px 10px;
+    padding: 0; }
+    /* line 359, ../sass/global.sass */
+    .item-list ul.pager li a {
+      display: block;
+      color: black; }
+    /* line 363, ../sass/global.sass */
+    .item-list ul.pager li.pager-item, .item-list ul.pager li.pager-current {
+      display: block;
+      height: 30px;
+      font-size: 1em;
+      line-height: 30px;
+      font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 30px;
+      background: #ebebeb;
+      color: white;
+      text-align: center;
+      border: 1px solid #b8b8b8;
+      color: white;
+      background-color: #f8f8f8;
+      *zoom: 1;
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFF8F8F8', endColorstr='#FFDEDEDE');
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4ZjhmOCIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjZGVkZWRlIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZGVkZWRlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f8f8f8), color-stop(50%, #dedede), color-stop(100%, #dedede));
+      background-image: -webkit-linear-gradient(#f8f8f8, #dedede 50%, #dedede 100%);
+      background-image: -moz-linear-gradient(#f8f8f8, #dedede 50%, #dedede 100%);
+      background-image: -o-linear-gradient(#f8f8f8, #dedede 50%, #dedede 100%);
+      background-image: -ms-linear-gradient(#f8f8f8, #dedede 50%, #dedede 100%);
+      background-image: linear-gradient(#f8f8f8, #dedede 50%, #dedede 100%);
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      border-radius: 3px;
+      border-radius: 3px; }
+      /* line 164, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+      .item-list ul.pager li.pager-item:hover, .item-list ul.pager li.pager-current:hover {
+        text-decoration: none; }
+      /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+      .item-list ul.pager li.pager-item:hover, .item-list ul.pager li.pager-current:hover {
+        background: #ebebeb; }
+    /* line 367, ../sass/global.sass */
+    .item-list ul.pager li.pager-current {
+      background: #d7d7d7;
+      color: black; }
+    /* line 377, ../sass/global.sass */
+    .item-list ul.pager li.pager-next a {
+      height: 31px;
+      display: inline-block;
+      overflow: hidden;
+      padding: 1px 0 0 1px;
+      width: 31px; }
+      /* line 258, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+      .item-list ul.pager li.pager-next a:hover:before {
+        background: #282e36; }
+      /* line 261, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+      .item-list ul.pager li.pager-next a:before {
+        display: block;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 30px;
+        background: #282e36;
+        color: white;
+        text-align: center;
+        border: 1px solid true;
+        color: white;
+        background-color: #333a45;
+        *zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF333A45', endColorstr='#FF1D2227');
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzM2E0NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333a45), color-stop(50%, #1d2227), color-stop(100%, #1d2227));
+        background-image: -webkit-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -moz-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -o-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -ms-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        border-radius: 3px;
+        display: inline-block;
+        line-height: 35px;
+        margin-right: 35px;
+        -webkit-box-shadow: #07090a 0px 0px 0px 1px;
+        -moz-box-shadow: #07090a 0px 0px 0px 1px;
+        box-shadow: #07090a 0px 0px 0px 1px; }
+        /* line 164, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+        .item-list ul.pager li.pager-next a:before:hover {
+          text-decoration: none; }
+        /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+        .item-list ul.pager li.pager-next a:before:hover {
+          background: #282e36; }
+      /* line 931, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+      #page .item-list ul.pager li.pager-next a:before {
+        font-size: 15px;
+        color: white; }
+    /* line 382, ../sass/global.sass */
+    .item-list ul.pager li.pager-previous a {
+      height: 31px;
+      display: inline-block;
+      overflow: hidden;
+      padding: 1px 0 0 1px;
+      width: 31px; }
+      /* line 258, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+      .item-list ul.pager li.pager-previous a:hover:before {
+        background: #282e36; }
+      /* line 261, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+      .item-list ul.pager li.pager-previous a:before {
+        display: block;
+        height: 30px;
+        font-size: 15px;
+        line-height: 30px;
+        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 30px;
+        background: #282e36;
+        color: white;
+        text-align: center;
+        border: 1px solid true;
+        color: white;
+        background-color: #333a45;
+        *zoom: 1;
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF333A45', endColorstr='#FF1D2227');
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzM2E0NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+        background-size: 100%;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333a45), color-stop(50%, #1d2227), color-stop(100%, #1d2227));
+        background-image: -webkit-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -moz-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -o-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: -ms-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        background-image: linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        -ms-border-radius: 3px;
+        -o-border-radius: 3px;
+        border-radius: 3px;
+        border-radius: 3px;
+        display: inline-block;
+        line-height: 35px;
+        margin-right: 35px;
+        -webkit-box-shadow: #07090a 0px 0px 0px 1px;
+        -moz-box-shadow: #07090a 0px 0px 0px 1px;
+        box-shadow: #07090a 0px 0px 0px 1px; }
+        /* line 164, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+        .item-list ul.pager li.pager-previous a:before:hover {
+          text-decoration: none; }
+        /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
+        .item-list ul.pager li.pager-previous a:before:hover {
+          background: #282e36; }
+      /* line 931, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+      #page .item-list ul.pager li.pager-previous a:before {
+        font-size: 15px;
+        color: white; }
+
+/************************* */
+/*  Reach Social */
+/************************ */
+/* line 402, ../sass/global.sass */
+ul.links li.facebook a, ul.links li.twitter a, ul.links li.google a {
+  display: inline-block; }
+  /* line 406, ../sass/global.sass */
+  ul.links li.facebook a:before, ul.links li.twitter a:before, ul.links li.google a:before {
+    padding-right: 10px; }
+/* line 412, ../sass/global.sass */
+ul.links li.facebook a {
+  color: #3b5a9a;
+  line-height: 36px; }
+  /* line 920, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  ul.links li.facebook a:hover {
+    color: #2d4475; }
+  /* line 924, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  ul.links li.facebook a:before {
+    font-size: 24px; }
+/* line 416, ../sass/global.sass */
+ul.links li.twitter a {
+  color: #25aae1;
+  line-height: 36px; }
+  /* line 920, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  ul.links li.twitter a:hover {
+    color: #1a8bb9; }
+  /* line 924, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  ul.links li.twitter a:before {
+    font-size: 24px; }
+/* line 420, ../sass/global.sass */
+ul.links li.google a {
+  color: #d9553e;
+  line-height: 36px; }
+  /* line 920, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  ul.links li.google a:hover {
+    color: #be3c26; }
+  /* line 924, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
+  ul.links li.google a:before {
+    font-size: 24px; }
+
+/************************* */
+/*  QTIP */
+/************************ */

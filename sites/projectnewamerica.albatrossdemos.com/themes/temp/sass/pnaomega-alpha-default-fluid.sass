@@ -1,0 +1,883 @@
+@import _mixins.sass
+
+/**
+// * This will display them grid elements as block rather than inline for mobile browsers 
+// * (essentially anything smaller than the narrow grid size, and media query declares. 
+// */
+#page
+  .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10,
+  .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-17, .grid-18, .grid-19,
+  .grid-20, .grid-21, .grid-22, .grid-23, .grid-24
+    display: block
+    float: none
+    position: relative
+    margin-left: 10px
+    margin-right: 10px
+    width: auto
+
+    
+    
+/* set variables for jaavascript
+html 
+  font-family: 'mobile'
+
+  
+  
+/**************************
+/*  PAGE ELEMENTS
+/**************************/
+
+.page-element
+
+  /* logo
+  &.logo-wrapper
+
+    a
+    
+
+/**************************
+/*  PAGE
+/**************************/
+#page
+
+
+
+/**************************
+/*  HEADER SECTION
+/**************************/
+
+#section-footer
+
+
+/*-------------------------
+/*  User zone
+/*-------------------------
+
+#zone-user-wrapper
+
+#zone-user
+  
+/*  User First Region
+/*.........................
+#region-user-first
+  .block-block
+    .content
+      span
+        display: none
+
+  #block-superfish-1
+    h2.block-title
+      +c(white)
+      +f(upper)
+      cursor: pointer
+      +fontawe(reorder, 18px)
+      line-height: $s_user
+      font-size: 1em
+      
+      &:before
+        padding-right: 10px
+      
+
+    .block-inner
+      height: $s_user
+      overflow: hidden
+      
+    /* main menu in header
+    ul.sf-menu.main-menu
+      li
+        float: none
+        display: block
+
+        &.sf-item-1
+          a.sf-depth-1
+            &:before 
+              width: 100%
+        
+        a
+          display: block
+          float: none
+          line-height: 40px
+          padding-left: 20px
+
+          
+        ul
+          display: none!important
+            
+
+/*  User Second Region
+/*.........................
+#region-user-second
+  #page &
+    position: absolute
+    right: 0
+    top: 0
+    z-index: 20
+    
+.block-user-dropdown-menu
+    
+  .content
+    ul
+      li
+        a
+          padding: 4px 0 
+
+
+/*-------------------------
+/* Branding Zone
+/*-------------------------
+
+#zone-branding-wrapper
+
+#zone-branding
+
+/*  Zone Branding Region
+/*.........................
+
+#region-branding
+  /* logo
+  .logo-wrapper
+    padding: 8% 0
+    text-align: center
+    
+  .block-views
+    +s(hide)
+  
+/*-------------------------
+/*  Menu zone
+/*-------------------------
+
+#zone-menu-wrapper
+  .mobile-search-open &
+    background: #000
+
+#zone-menu
+
+/*  Menu Region
+/*.........................
+
+#region-menu
+
+  /* internal menu 
+  .block-menu-internal-menu
+    float: left
+    width: 75%
+    
+    ul.menu
+      li
+        overflow: hidden
+        margin: 0
+        text-align: center
+        width: 33%
+        
+        a
+          font-size: 4em
+          
+          &:before
+            #page &
+              margin: -8px 0 0 0
+              
+  .block-views      
+    height: $s_menu
+    float: right
+    width: 25%
+    
+    .mobile-search-open &
+      position: absolute
+      width: 100%
+      
+      h2.block-title
+        width: 25%
+      
+      .content
+        display: block
+    
+    /*hide for external pages
+    +external
+      +s(hide)
+    
+    h2.block-title
+      cursor: pointer
+      +fontawe_buttonize(search, 18px, #fff, false, $grey_darkest, darken($grey_darkest, 15%), false)
+      float: right
+      font-size: 4em
+      line-height: 60px
+      overflow: hidden
+      height: $s_menu
+      text-align: center
+      width: 100%
+      
+      &:before
+        #page &
+          margin: -8px 0 0 0
+          
+      .mobile-search-open &
+        background-color: #000
+    
+    
+    .content
+      background-color: #000
+      +s(hide)
+      clear: both
+      height: $s_menu
+      position: absolute
+      width: 75%
+        
+      form
+        padding: 15px 10px 0
+        
+      .views-widget-filter-search_api_views_fulltext
+        padding: 0
+        width: 80%
+    
+        label
+          display: none
+        
+      .form-item-search-terms
+        
+        input
+          +box-sizing(border-box)
+          height: 33px
+          color: $text_color
+          background: #fff!important
+          padding: 0 10px
+          +border-right-radius(0px)
+          width: 100%
+          
+      .views-widget-sort-by,
+      .views-widget-sort-order
+        +s(hide)
+
+          
+      .views-submit-button
+        padding: 0
+        width: 20%
+        
+        .form-submit
+          +box-sizing(border-box)
+          +buttonize(auto, 33px, 1em, $green_light)
+          +border-left-radius(0px)
+          margin: 0
+          padding: 0
+          width: 100%
+
+
+/*-------------------------
+/*  Header zone
+/*-------------------------
+
+#zone-header-wrapper
+
+#zone-header
+  
+/*  Header First Region
+/*.........................
+#region-header-first
+
+
+/*  Header Second Region
+/*.........................
+#region-header-second
+  
+    
+    
+/**************************
+/*  CONTENT SECTION
+/**************************/
+
+#section-content
+
+
+/*-------------------------
+/*  Preface zone
+/*-------------------------
+
+#zone-preface-wrapper
+
+#zone-preface
+  
+/*  Preface First Region
+/*.........................
+#region-preface-first
+
+
+
+/*  Preface Second Region
+/*.........................
+#region-preface-second
+
+
+/*  Preface Third Region
+/*.........................
+#region-preface-third
+
+
+/*-------------------------
+/*  Content zone
+/*-------------------------
+
+#zone-content-wrapper
+
+#zone-content
+
+/* Layout manipulation for full width
+/*.........................
+
+body.not-front.external-section #page
+  #zone-content
+    padding-top: 100px
+  
+  #region-sidebar-first,
+  #region-sidebar-second,
+  #region-content
+  
+    +box-sizing(border-box)
+    padding-left: 10px
+    padding-right: 10px
+    margin: 0
+    width: 100%
+  
+  #region-content  
+    background: #fff
+    float: left
+    padding-bottom: $s_content_pad_b
+    
+    .region-content-inner
+      +s(content_mobile)
+      background: #fff
+      margin-top: -60px
+
+/*  Sidebar First Region
+/*.........................
+#region-first-second
+
+
+/*  Content Region
+/*.........................
+#region-content 
+  
+  body.html #page #zone-content &
+    .pane-page-messages
+      padding: 0 0 30px 0
+      margin: 0
+      
+  .region-content-inner
+      
+    /* reset to default to blog nodes
+    body.alternate-content-layout.node-type-blog #page &,
+      +s(content_mobile)
+      background-color: #fff
+  
+
+
+/*  Sidebar Second Region
+/*.........................
+#region-sidebar-second
+  .block-views-team-jump-list-block-1
+    +s(hide)
+    
+  /* secondary menu
+  #block-menu-block-1,
+  #block-menu-menu-anonymous-user-menu
+    +s(sidebar_menu_mobile) 
+    
+  
+  
+/*-------------------------
+/*  Postscript zone
+/*-------------------------
+
+#zone-postscript-wrapper
+
+#zone-postscript
+  
+/*  Postscript First Region
+/*.........................
+#region-postscript-first
+
+
+/*  Postscript Second Region
+/*.........................
+#region-postscript-second
+
+
+/*  Postscript Third Region
+/*.........................
+#region-postscript-third
+
+/*  Postscript Fourth Region
+/*.........................
+#region-postscript-forth
+
+/*-------------------------
+/*  Twitter Block
+/*-------------------------
+.block-twitter-0
+  padding-top: 30px
+  
+  .tweets-pulled-listing
+  
+    h2
+      margin-left: gw(1, true, true)
+      margin-bottom: 30px
+      
+    h2,ul
+      
+    li
+      margin-bottom: 30px
+    
+    
+/**************************
+/*  FOOTER SECTION
+/**************************/
+
+#section-footer
+
+$s_footer: 80px
+
+/*-------------------------
+/*  Footer zone
+/*-------------------------
+
+#zone-footer-wrapper
+  border-bottom-width: $s_footer
+
+#zone-footer
+
+/*  Footer First Region
+/*.........................
+#region-footer-first
+  padding-top: 20px
+  padding-bottom: 112px
+  
+
+  /*main menu in footer
+  .menu-name-main-menu
+    ul ul
+      +s(hide)
+      
+  /* sign up block
+  .block-webform
+    h2.block-title
+      margin-top: 7px
+      
+    form
+      .form-item
+        width: 65% 
+      
+      .form-actions
+        width: 35%
+        
+        .form-submit
+          width: 100%
+  
+  /* social Links        
+  .block-reach-social-blocks
+    bottom: 40px
+    
+
+/*  Footer Second Region
+/*.........................
+
+#region-footer-second
+  .region-inner
+    height: $s_footer
+    bottom: -($s_footer)
+  
+  .page-element,
+  .block
+    line-height: $s_footer / 2
+    
+
+/**************************
+/* MAIN MENU
+/**************************/
+
+    
+              
+/**************************
+/*  NODES
+/**************************/   
+.node
+        
+  /*-------------------------
+  /*  Full node
+  /*-------------------------
+  &.node-full
+  
+  /*-------------------------
+  /*  Teaser node
+  /*-------------------------
+  &.node-teaser
+
+          
+      
+  /*-------------------------
+  /*  Page node
+  /*-------------------------
+  &.node-page
+
+  
+/*-------------------------
+/*  Blog node + Panels Blog
+/*-------------------------
+body.node-type-blog #block-system-main,
+.node-blog
+ 
+  .field-name-taxonomy-alter-for-blog-listing
+    +s(hide)
+  
+  &.node-teaser,
+  .panel-display
+    .field-name-body
+      margin-bottom: 40px
+    
+  &.node-teaser
+    
+    .views-row &,
+    .attachment-before .views-row.views-row-last &
+      margin-bottom: 50px
+      
+    .views-row.views-row-last &
+      margin-bottom: 0
+      
+    
+     
+    .field-name-taxonomy-alter-for-blog-listing
+      +b(dot)
+      display: block
+      height: 20px
+      margin-top: 10px
+    
+      .field-items
+        +s(hide)
+        
+  ul.links
+    li      
+      &.facebook,
+      &.twitter,
+      &.google
+        display: inline-block
+        padding: 0
+        text-align: center
+        width: 33%
+        
+      &.disqus_comments_num
+        display: none
+        
+  .pane-disqus-disqus-comments
+    display: none
+
+
+/*-------------------------
+/*  Form node + Panels BForm
+/*-------------------------      
+body.node-type-form 
+  #block-system-main
+    .pane-node-webform
+      .form-item
+        margin: 10px 20px
+
+
+
+/**************************
+/*  DISPLAY SUITE
+/**************************/ 
+
+.ds-2col
+
+  .group-left,
+  .group-right
+    clear: none
+
+
+/* 3 column layout
+.ds-3col
+  
+  .group-left,
+  .group-middle,
+  .group-right
+      
+        
+  
+/**************************
+/*  VIEWS
+/**************************/    
+.view
+
+
+/**************************
+/* MENUS
+/**************************/
+
+
+/**************************
+/*  PANELS
+/**************************/
+
+/* Panels team members      
+.pane-bundle-person
+  margin-bottom: 25px
+  
+  
+  .field-name-field-content-media
+    padding-bottom: gut(2)
+    text-align: center
+    
+
+
+.panel-display
+  .panel-2col,
+  &.panel-2col-stacked
+    /* reset columns
+    .panel-col-first,
+    .panel-col-last
+      float: none
+      width: 100%
+
+
+/**************************
+/*  BLOCKS
+/**************************/
+
+.block
+
+  /*-------------------------
+  /*  Custom Blocks
+  /*-------------------------
+  &.block-block
+
+
+    
+/**************************
+/*  FRONT PAGES (EXTERNAL + INTERNAL)
+/**************************/
+
+body.front,
+body.internal-front-page
+  #zone-content-wrapper
+    padding-bottom: 0
+  
+  #zone-content
+    .pane-page-messages
+      margin: 0 10px!important
+      width: auto
+    
+  /* center messages + top level panes 
+  .pane-page-messages,
+  .panel-pane.pane-panels-mini > .pane-content
+    padding-bottom: 90px
+      
+    /* Panels slideshow widget  
+  .pane-external-home-page-research,
+  .pane-internal-home-page-research
+  
+    .views_slideshow_cycle_main
+      padding-top: 30px
+      width: 100%
+      
+    .views_slideshow_cycle_main .views-slideshow-cycle-main-frame 
+      width: 100% !important
+      height: auto
+    
+    .views_slideshow_cycle_main .views-slideshow-cycle-main-frame-row 
+      width: 100% !important
+      height: auto
+    
+    .views_slideshow_cycle_main .field-content 
+      max-width: 100%
+      width: 100%
+      
+    .field-name-field-slideshow-link
+      padding-top: 30px
+      
+    /* slide pager
+    .views-slideshow-controls-bottom
+      top: 0
+      
+      .views_slideshow_pager_field_item
+        margin: 0 15px 0 0
+        +block-link(40px, 10px)
+          
+          
+  
+  /* latest blog section + recent research    
+  .pane-external-home-page-latest,
+  .pane-internal-home-page-latest
+    & > .pane-content
+      padding-bottom: 60px
+      
+    
+    .views-row
+      margin-bottom: 30px
+      
+      &.views-row-last
+        margin-bottom: 0
+        
+    .node
+      
+      .field-name-body
+        height: auto!important
+          
+        
+/**************************
+/* EXTERNAL FRONT PAGE 
+/**************************/ 
+
+body.front
+  #zone-content
+    padding-top: 35px
+    
+    .pane-bundle-image-media
+      +sprite-block(234px, 41px, 0, 0, "pna-mobile.png")
+      
+      img
+        display: none
+        
+  /* "the map is changing" section
+  .pane-external-home-page-header
+    
+    /* "the map is changing" text
+    h2
+      margin-top: 20px
+      line-height: 1.1em
+      
+  .pane-bundle-quick-links.login-link
+    display: none
+      
+      
+      
+/**************************
+/* BLOG LISTINGS AND BLOG POSTS 
+/**************************/      
+body.context-latest,
+body.alternate-content-layout.node-type-blog
+  #region-sidebar-second
+    .block-facetapi,
+    .block-blog-latest-posts-block-1,
+    .block-blog-latest-posts-block-2,
+    .block-blog-latest-posts-block-3
+      +s(hide)
+  
+  #views-exposed-form-search-api-blog-list-panel-pane-1,
+  #views-exposed-form-search-api-blog-list-panel-pane-2
+    .views-widget-filter-field_blog_category
+      +s(sidebar_menu_mobile) 
+      
+  .view-search-api-blog-list
+    .view-empty
+      min-height: 300px
+  
+  
+      
+/********************************
+/* RESEARCH LISTING AND BOOKMARKS
+/*******************************/
+body.page-research-bookmarks,
+body.page-research-database,
+body.node-type-research-political,
+body.node-type-research-nonprofit
+
+  #zone-content
+    background: #fff
+    padding-top: 10px
+  
+  /* filters
+  #region-preface-first
+    .block
+      h2.block-title
+        +c(green)
+        +f(upper)
+        cursor: pointer
+        line-height: 45px
+        font-size: 1em
+        text-align: right
+        
+      .content
+        display: none
+        padding-bottom: 40px
+        
+                  
+      form
+        .views-exposed-widget
+          width: 44%
+          
+          .select2-container
+            max-width: 100%
+          
+        .views-widget-filter-field_research_demographic_tid,
+        .views-widget-filter-field_research_state_tid
+          clear: left
+        
+        .views-widget-filter-field_research_issue_tid,
+        .views-exposed-widget views-widget-filter-field_research_type_tid
+          clear: right  
+          
+        .views-submit-button
+          clear: both  
+        
+  &.mobile-research-filter-open
+    
+    #region-preface-first
+      .block
+        h2.block-title
+          +c(black)
+          
+        .content
+          display: block
+
+  
+  .panel-display
+    padding-bottom: 60px
+    
+    .center-wrapper
+      
+      
+    .panel-col-last
+      display: none
+      
+  .pane-research-panel-pane-1,
+  .pane-flag-bookmarks-panel-pane-1,
+  .pane-bookmarks-panel-pane-1
+    .views-row,
+    .view-empty
+      +s(border_grey)
+      padding: 20px 10px
+      
+    .views-field-title
+      padding-right: 95px
+      
+      
+/**************************
+/* SEARCH PAGE
+/**************************/
+body.page-search
+  #zone-content
+    padding-top: 25px!important
+  
+  #region-sidebar-second
+    padding-bottom: 52px
+    
+    .block-views
+      h2
+        +s(hide)
+        
+    .block h2.block-title,
+    .views-widget-sort-by label,
+    .views-widget-sort-order label
+      background: transparent
+      padding-left: 0!important
+  
+  #views-exposed-form-full-site-search-panel-pane-1
+  
+    .views-widget-filter-search_api_views_fulltext
+      width: 65%
+      
+      .form-item-search-terms
+        max-width: 100%
+    
+    .views-submit-button
+      width: 35%
+      
+      .form-submit
+        width: 100% 
+      

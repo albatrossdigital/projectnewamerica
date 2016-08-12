@@ -1,0 +1,857 @@
+@import _mixins.sass
+
+/* set variables for jaavascript
+html 
+  font-family: 'full'
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)
+  html
+    zoom: 0.8
+    
+    iframe#dsq1
+      //width: 350.4px
+      zoom: 1.3
+        
+    
+  .block-user-dropdown-menu
+    .content
+      right: 0
+
+    
+
+/**************************
+/*  PAGE
+/**************************/
+#page
+
+
+
+/**************************
+/*  HEADER SECTION
+/**************************/
+
+#section-footer
+
+
+/*-------------------------
+/*  User zone
+/*-------------------------
+
+#zone-user-wrapper
+
+#zone-user
+  
+/*  User First Region
+/*.........................
+#region-user-first
+  width: 830px
+  
+  #block-superfish-1
+    h2.block-title
+      +s(hide)
+      
+    .block-inner
+      height: $s_user!important
+      
+    /* main menu in header
+    ul.sf-menu.main-menu
+      min-width: 890px
+      margin-left: -10px
+        
+      li
+        a
+          display: inline-block
+          float: left
+          
+          &.sf-depth-1
+            line-height: $s_user
+            padding: 0 20px
+          
+        &.sf-item-1
+          a.sf-depth-1
+            padding: 0
+            width: 40px
+            
+          ul
+            margin-left: -15px
+            
+        &.sfHover
+          ul
+            top: 42px
+            
+        ul
+          background: $teal
+          font-family: $font_alt
+          margin-left: 10px
+          +rounded(0px, false)
+          padding: 5px 10px 10px 15px
+          width: 12em!important
+          
+          a
+            line-height: $s_user - 5px
+        
+
+
+/*  User Second Region
+/*.........................
+#region-user-second
+  width: 90px
+
+  #block-user-dropdown-menu-dropdown,
+  #block-block-3
+    margin-right: -10px
+  
+
+/*-------------------------
+/* Branding Zone
+/*-------------------------
+
+#zone-branding-wrapper
+  min-height: $s_branding
+
+#zone-branding
+
+/*  Zone Branding Region
+/*.........................
+
+#region-branding
+
+  /* logo
+  .logo-wrapper
+    float: left
+    padding-top: 45px
+    
+  .block-views
+    float: right
+    margin-top: 85px
+    
+    h2.block-title
+      display: none
+      
+    label
+      display: none
+      
+      &.processed
+        display: block
+        line-height: 33px
+        font-size: 1em
+        padding: 0 30px
+    
+    .form-item-search-terms
+      +buttonize(240px, 26px, 1em, #fff)
+      +borderbox(240px 33px, 2px 10px 2px 0, 1px)
+      +border-right-radius(0px)
+      +fontawe_s(search, 20px, $grey)
+      background: #fff!important
+      filter: none
+      border-right: 0
+      float: left
+      display: inline-block
+      margin: 0
+      
+      &:before
+        line-height: 30px
+          
+      
+      input
+        padding: 0
+        border: 0
+        float: right
+        +rounded(0px)
+        height: 26px
+        width: 200px
+        
+    form
+      +inline-form-submit
+      
+      .views-submit-button
+      
+        .form-submit
+          +borderbox(60px 33px, 0 15px, 1px)
+    
+/*-------------------------
+/*  Menu zone
+/*-------------------------
+
+#zone-menu-wrapper
+
+#zone-menu
+
+/*  Menu Region
+/*.........................
+
+#region-menu
+
+  /* internal menu 
+  .block-menu-internal-menu
+    ul.menu
+        
+      li
+        padding: 0 20px
+
+/*-------------------------
+/*  Header zone
+/*-------------------------
+
+#zone-header-wrapper
+
+#zone-header
+  
+/*  Header First Region
+/*.........................
+#region-header-first
+
+
+/*  Header Second Region
+/*.........................
+#region-header-second
+  
+    
+    
+/**************************
+/*  CONTENT SECTION
+/**************************/
+
+#section-content
+  +not-front-external
+    padding-top: $external_top
+    
+  /*
+    +internal
+      padding-top: $internal_top
+    
+
+/*-------------------------
+/*  Preface zone
+/*-------------------------
+
+#zone-preface-wrapper
+
+#zone-preface
+  
+/*  Preface First Region
+/*.........................
+#region-preface-first
+
+
+/*  Preface Second Region
+/*.........................
+#region-preface-second
+
+
+/*  Preface Third Region
+/*.........................
+#region-preface-third
+
+
+/*-------------------------
+/*  Content zone
+/*-------------------------
+
+#zone-content-wrapper
+  background-color: #FFF
+  padding-bottom: $s_content_pad_b
+
+#zone-content
+
+
+/* Layout manipulation for dot grid
+/*.........................
+#region-sidebar-first,
+#region-sidebar-second,
+#region-content
+  +not-front-external
+    margin-top: -($external_top - $external_pad)
+    
+  +internal
+    margin-top: -($internal_top - $internal_pad)
+    
+  
+/*  Sidebar First Region
+/*.........................
+#region-sidebar-first
+  float: left
+
+
+/*  Content Region
+/*.........................
+#region-content
+  .region-content-inner
+    min-height: $external_top
+    
+    /* add padding to external pages
+    +not-front-external
+      +s(content_external)
+      
+    /* reset to default to blog nodes
+    body.alternate-content-layout.node-type-blog #page &,
+      +s(content_external)
+      
+        
+    +not-front-external  
+      /* Alternate external layout (lists)
+      .entity-redhen-contact.view-mode-contact_team_member_view,
+      .node-blog.node-teaser
+        +s(content_external)
+
+
+/* Panels layout
+.panel-display
+  /* internal pages
+  +internal
+
+    /* left (main)
+    .panel-col-first
+      width: 83%
+      
+    /* right
+    .panel-col-last
+      width: 17%
+      
+      .inside
+        margin: ($internal_top - $internal_pad + 15px) 0 0 15px
+            
+/* Bookmarks
+.flag-wrapper
+  
+  .flag-message
+              
+
+/*  Sidebar Second Region
+/*.........................
+#region-sidebar-second
+  float: right
+  
+  .block
+    margin-left: 35px
+
+  .region-inner
+    +external
+      padding-top: $external_top
+      
+    
+  
+/*-------------------------
+/*  Postscript zone
+/*-------------------------
+
+#zone-postscript-wrapper
+
+#zone-postscript
+  
+/*  Postscript First Region
+/*.........................
+#region-postscript-first
+
+
+/*  Postscript Second Region
+/*.........................
+#region-postscript-second
+
+
+/*  Postscript Third Region
+/*.........................
+#region-postscript-third
+
+/*  Postscript Fourth Region
+/*.........................
+#region-postscript-forth
+
+
+/*-------------------------
+/*  Twitter Block
+/*-------------------------
+.block-twitter-0
+  padding: 40px 0 60px 0
+  
+  h2.block-title
+    //float: left
+
+    
+  .tweets-pulled-listing
+  
+    h2
+      width: gw(3)
+      
+    h2,ul
+      float: left
+      
+    li
+      float: left
+      margin-left: gut(2)
+      padding: 0 gut(2)
+      width: gw(4) - gut(4)
+    
+    
+/**************************
+/*  FOOTER SECTION
+/**************************/
+
+#section-footer
+
+
+
+/*-------------------------
+/*  Footer zone
+/*-------------------------
+
+#zone-footer-wrapper
+  border-bottom-width: $s_footer
+
+#zone-footer
+
+/*  Footer First Region
+/*.........................
+#region-footer-first
+
+  /*main menu in footer
+  .menu-name-main-menu
+    &> ul.menu
+    
+      &> li
+        float: left
+        margin-left: gut(2)
+        padding-top: 20px
+        width: gw(2)
+        
+        
+        &:first-child
+          margin-left: 0
+          
+        &> a
+          line-height: 1.5em
+          height: 65px
+          
+        li
+          margin-left: 0
+          float: none
+          width: auto
+          
+          a
+            text-decoration: underline
+            
+  /* sign up block
+  .block-webform
+    margin-bottom: 5px
+    width: 300px
+    
+    h2.block-title
+      margin-top: 15px
+      
+    form
+      
+      .form-item
+        width: 210px
+        
+      .form-actions
+        width: 90px
+        
+        .form-submit
+          float: left
+          max-width: 100%
+    
+    
+  /* social Links        
+  .block-reach-social-blocks
+    +external
+      bottom: 20px
+      
+    +internal
+      bottom: 70px
+
+/*  Footer Second Region
+/*.........................
+
+#region-footer-second
+  
+  .region-inner
+    height: $s_footer
+    bottom: -($s_footer)
+    right: 0
+
+  .page-element,
+  .block
+    float: left
+    line-height: $s_footer
+    
+  .block
+    margin-left: 10px
+    
+    
+
+/**************************
+/* MAIN MENU
+/**************************/
+
+    
+              
+/**************************
+/*  NODES
+/**************************/   
+.node
+        
+  /*-------------------------
+  /*  Full node
+  /*-------------------------
+  &.node-full
+  
+  /*-------------------------
+  /*  Teaser node
+  /*-------------------------
+  &.node-teaser
+
+          
+      
+  /*-------------------------
+  /*  Page node
+  /*-------------------------
+  &.node-page
+  
+  
+/*-------------------------
+/*  Blog node + Panels Blog
+/*-------------------------
+body.node-type-blog #block-system-main,
+.node-blog
+  
+  &.node-teaser,
+  .panel-display
+    .field-name-body
+      margin-bottom: 60px
+          
+  .field-name-taxonomy-alter-for-blog-listing
+    margin-top: 20px
+    clear: both
+    
+    .field-tags,
+    .term-item
+      float: left
+    
+    .field-tags
+      font-weight: normal
+      margin-right: 10px
+      
+    .term-item
+      margin-right: 10px
+      
+  ul.links
+    li      
+      &.facebook,
+      &.twitter,
+      &.google
+        margin-right: 20px
+        display: inline-block
+        
+      &.disqus_comments_num
+        display: inline-block
+        float: right
+        
+        a
+          line-height: 36px
+        
+  .pane-disqus-disqus-comments
+    clear: both
+    padding-top: 50px
+    
+    h2.pane-title
+      +sidebar_header
+      margin-bottom: 20px
+      
+    .pane-content
+      margin-left: 10px
+      width: 438px
+      
+
+
+/*-------------------------
+/*  Form node + Panels BForm
+/*-------------------------      
+body.node-type-form 
+  #block-system-main
+    .pane-node-webform
+      .form-item
+        margin: 10px 90px
+        
+        .form-item
+          margin: 0
+
+      
+      
+/*-------------------------
+/*  Research nodes + Panels Research
+/*-------------------------
+body.node-type-research-nonprofit #block-system-main,
+.node-research-nonprofit,
+body.node-type-research-political #block-system-main,
+.node-research-political
+ 
+  /* center panels column
+  .panel-col-first > .inside
+    +s(content_internal)
+    position: relative
+    
+  
+  /* date source
+  .field-name-post-date
+    margin-bottom: 20px
+    
+   
+
+/**************************
+/*  DISPLAY SUITE
+/**************************/ 
+
+.ds-2col
+
+  .group-left,
+  .group-right
+    clear: none
+
+
+/* 3 column layout
+.ds-3col
+  
+  .group-left,
+  .group-middle,
+  .group-right
+      
+        
+  
+/**************************
+/*  VIEWS
+/**************************/    
+.view
+
+    
+
+/**************************
+/* MENUS
+/**************************/
+
+
+/**************************
+/*  PANELS
+/**************************/
+
+/* Panels team members      
+  .pane-bundle-person
+    .pane-title
+      width: 220px
+          
+    .pane-title,
+    .field-name-field-position
+      float: left
+      
+    .field-name-field-position
+      max-width: 136px
+    
+    .field-name-field-content-media
+      float: right
+      margin-top: -35px
+      padding: 0 0 gut(2) gut(2)
+    
+    .field-name-field-position,
+    .field-name-field-description
+      clear: left
+
+
+/****************************************
+/*  BLOCKS THAT APPEAR IN MULTIPLE PLACES
+/****************************************/
+
+.block
+
+  /*-------------------------
+  /*  Custom Blocks
+  /*-------------------------
+  &.block-block
+
+
+    
+         
+/**************************
+/*  FRONT PAGES (EXTERNAL + INTERNAL)
+/**************************/
+
+body.front,
+body.internal-front-page
+  #zone-content
+  
+    /* center messages + top level panes 
+    .pane-page-messages,
+    .panel-pane.pane-panels-mini > .pane-content
+      margin: 0 auto
+      padding-bottom: 65px
+      width: $normal_zone_width - gut(2)
+  
+  /* "the map is changing section"
+  .pane-external-home-page-header
+    .panel-col-first
+      width: gw(7)
+      
+    .panel-col-last
+      margin-left: gut(2)
+      width: gw(4)
+      
+      .pane-bundle-quick-links
+        margin-right: -(gw(1, true, true))
+        
+      
+    
+  /* Panels slideshow widget  
+  .pane-external-home-page-research,
+  .pane-internal-home-page-research
+    
+    /* right elemenets
+    .field-name-field-title,
+    .field-name-field-date,
+    .field-name-field-slideshow-link,
+    .field-name-field-description,
+    .pane-custom.pane-2
+      float: right
+      width: 390px
+     
+    .field-type-media
+      float: left
+      width: 460px
+      
+    /* slide pager
+    .views-slideshow-controls-bottom
+      top: 328px
+      
+      .views_slideshow_pager_field_item
+        margin: 0 gut(2) 0 0
+        +block-link(gw(1, false, false), 10px)
+        
+      
+  /* latest blog section + recent research    
+  .pane-external-home-page-latest,
+  .pane-internal-home-page-latest
+    & > .pane-content
+      padding-bottom: 0!important
+    
+    .views-row
+      float: left
+      margin-right: gut(2)
+      width: gw(4)
+      
+      &.views-row-last
+        margin-right: 0
+        
+    .node
+      min-height: 322px
+      
+      .field-name-body
+        overflow: hidden
+
+        p
+          margin-bottom: 1.5em
+        
+/**************************
+/* EXTERNAL FRONT PAGE 
+/**************************/        
+
+body.front
+    
+  /* "the map is changing" section
+  .pane-external-home-page-header
+    
+    /* "the map is changing" text
+    h2
+      margin-top: 115px
+  
+  /* latest blog section + recent research    
+  .pane-external-home-page-latest,
+    .node
+      padding: 15px
+      
+        
+/**************************
+/* INTERNAL FRONT PAGE 
+/**************************/        
+
+body.internal-front-page
+  
+  /* Panels latest research   
+  .pane-internal-home-page-latest        
+    .view-content
+      .field-name-title
+        overflow: hidden
+
+
+/**************************
+/* BLOG LISTINGS AND BLOG POSTS 
+/**************************/      
+body.context-latest,
+body.alternate-content-layout.node-type-blog
+
+  .view-search-api-blog-list
+    .view-empty
+      +s(content_external)
+      min-height: $external_top
+      
+  
+  /* exposed forms
+  #views-exposed-form-search-api-blog-list-panel-pane-1,
+  #views-exposed-form-search-api-blog-list-panel-pane-2
+    .views-widget-filter-field_blog_category
+      left: -35px
+      top: -($external_top - 25px)
+      
+      
+/********************************
+/* RESEARCH LISTING AND BOOKMARKS
+/*******************************/
+body.page-research-bookmarks,
+body.page-research-database,
+body.node-type-research-political,
+body.node-type-research-nonprofit
+  #region-preface-first
+    .block
+      //min-height: $internal_top
+      
+      .block-inner
+        padding-top: 30px
+        
+      h2.block-title
+        +s(hide)
+          
+      form
+        .views-exposed-widget
+          padding-right: 0
+          padding-bottom: 60px
+          width: 15%
+      
+        
+  .pane-research-panel-pane-1,
+  .pane-flag-bookmarks-panel-pane-1,
+  .pane-bookmarks-panel-pane-1
+    .views-row,
+    .view-empty
+      +s(content_internal)
+ 
+      
+/**************************
+/* SEARCH PAGE
+/**************************/
+body.page-search     
+    
+  #section-content,
+  #region-sidebar-second .region-inner
+    padding-top: 60px!important
+  
+  #region-content,
+  #region-sidebar-second
+    margin-top: -($internal_top - $internal_pad)!important
+  
+  #region-sidebar-second
+    .block-views
+      h2
+        +s(hide)
+        
+  #views-exposed-form-full-site-search-panel-pane-1
+    .form-item-search-terms
+      width: 190px
+
+    
+  

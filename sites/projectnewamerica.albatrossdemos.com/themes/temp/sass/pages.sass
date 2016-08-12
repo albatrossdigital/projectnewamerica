@@ -1,0 +1,1174 @@
+@import _mixins.sass
+
+/**************************
+/*  PAGE
+/**************************/
+#page
+
+
+
+/**************************
+/*  HEADER SECTION
+/**************************/
+
+#section-header
+
+
+/*-------------------------
+/*  User zone
+/*-------------------------
+
+#zone-user-wrapper
+  +external
+    background-color: $teal
+    
+  +internal
+    background-color: #000
+    
+  min-height: $s_user
+
+#zone-user
+
+
+  
+/*  User First Region
+/*.........................
+#region-user-first
+  .block-block
+    .content
+      +c(green_light)
+      +f(upper)
+      
+      p
+        line-height: $s_user
+
+  #block-block-4
+    float: left
+    width: 40px
+    
+    ul.sf-menu.main-menu
+      +list-clear()
+      li
+        &.sf-item-1
+          a.sf-depth-1
+            +fontawe_r(home, 24px, $s_user, #fff)
+    
+
+  #block-superfish-1
+    /* main menu in header
+    ul.sf-menu.main-menu
+      +list-clear()
+        
+      li
+        a
+          +c(white)
+          display: inline-block
+          float: left
+          
+          &.sf-depth-1
+            +f(upper)
+
+        &.sf-item-1
+          a.sf-depth-1
+            +fontawe_r(home, 24px, $s_user, #fff)
+
+            &:before
+              color: white 
+
+            &:hover
+              &:before
+                color: $grey_darkest
+          
+        a.active,
+        a:hover,
+        &.active-trail a,
+        &.sfHover a
+          &.sf-depth-1
+            color: $grey_darkest
+
+            
+  
+
+/*  User Second Region
+/*.........................
+#region-user-second
+
+  .block
+    float: right
+    padding-top: 5px
+
+.block-user-dropdown-menu
+  .block-inner
+    position: relative
+  
+  h2.block-title
+    +buttonize(60px, $b_link_h, 1em, $grey_darker)
+    +fontawe(chevron-down, 14px, #fff)
+    padding-left: 25px
+    line-height: 30px
+    text-align: left
+    position: relative
+    z-index: 10
+    
+    &:before
+      line-height: 30px
+      position: absolute
+      right: 16px
+      
+    
+  .content
+    background: $grey_darker
+    border: 1px solid darken($grey_darker, 20%)
+    position: absolute
+    display: none
+    +border-bottom-radius(3px)
+    top: 34px
+    width: 120px!important
+    z-index: 1
+    
+    ul
+      +list-clear()
+      padding-bottom: 10px!important
+      
+      li
+        display: block
+        +f(upper)
+        font-size: 0.8em
+        padding: 3px 12px 0 12px
+        text-align: left
+        width: 100%
+        
+        a
+          +c(white)
+      
+  &.open
+    h2.block-title
+      background: $grey_darker
+      +border-bottom-radius(0px)
+      border-bottom-color: $grey_darker
+      height: $b_link_h + 2
+    
+
+/*-------------------------
+/* Branding Zone
+/*-------------------------
+
+#zone-branding-wrapper
+  background-color: $grey_darkest
+
+#zone-branding
+
+/*  Zone Branding Region
+/*.........................
+
+#region-branding
+
+  /* logo
+  .logo-wrapper
+
+    
+  /* Search forms    
+  .block-views
+    
+    .views-widget-filter-search_api_views_fulltext
+      padding: 0
+      
+    .views-widget-sort-by,
+    .views-widget-sort-order
+      +s(hide)
+    
+    .form-item-search-terms
+      background-color: #fff
+
+      input
+        float: right
+        
+    .views-submit-button
+      padding: 0
+      
+      .form-submit
+        float: left
+        margin: 0
+      
+  
+/*-------------------------
+/*  Menu zone
+/*-------------------------
+
+#zone-menu-wrapper
+  background-color: $grey_dark
+  +glass-grad($grey_dark)
+  min-height: $s_menu
+  
+
+#zone-menu
+
+/*  Menu Region
+/*.........................
+
+#region-menu
+  h1
+    font-size: 1.8em
+    letter-spacing: 0.075em
+    line-height: $s_menu
+    text-align: center
+  
+  /* internal menu 
+  .block-menu-internal-menu
+    ul.menu
+      +list_float()
+      
+      a
+        +c(white)
+        +f(upper)
+        display: block
+        height: $s_menu
+        line-height: $s_menu
+        
+      li
+        
+        &.active-trail
+          +b(dot)
+          
+          a
+            color: #000
+        
+        a
+          +fontawe_buttonize(book, 18px, #fff, false, $green_light, darken($green_light, 15%), false)
+        
+        
+        &.first
+          a
+            +fontawe_buttonize(home, 18px, #fff, false, $grey_darkest, darken($grey_darkest, 15%), false)
+            
+        &.last
+          a
+            +fontawe_buttonize(bookmark, 18px, #fff, false, $teal, darken($teal, 15%), false)
+            
+            
+            
+        
+
+/*-------------------------
+/*  Header zone
+/*-------------------------
+
+#zone-header-wrapper
+
+#zone-header
+  
+/*  Header First Region
+/*.........................
+#region-header-first
+
+
+/*  Header Second Region
+/*.........................
+#region-header-second
+ 
+    
+    
+/**************************
+/*  CONTENT SECTION
+/**************************/
+
+#section-content
+  +b(dot)
+  
+    
+
+/*-------------------------
+/*  Preface zone
+/*-------------------------
+
+#zone-preface-wrapper
+
+#zone-preface
+  
+/*  Preface First Region
+/*.........................
+#region-preface-first
+
+
+/*  Preface Second Region
+/*.........................
+#region-preface-second
+
+
+/*  Preface Third Region
+/*.........................
+#region-preface-third
+
+
+/*-------------------------
+/*  Content zone
+/*-------------------------
+
+#zone-content-wrapper
+
+#zone-content
+
+  
+/*  Sidebar First Region
+/*.........................
+#region-sidebar-first
+
+
+
+/*  Content Region
+/*.........................
+#region-content
+  +not-front-external
+    background-color: #FFF
+    
+  body.alternate-content-layout #page &
+    background-color: transparent
+  
+  .region-content-inner
+    
+    /* remove padding for alternate layout
+    body.alternate-content-layout #page &
+      border: 0
+      padding: 0
+      background-color: transparent
+      
+      #block-system-main
+        background-color: #fff
+      
+
+/* Panels layout
+.panel-display
+  .pane-page-title
+    h2
+      margin-bottom: 20px
+
+  /* internal pages
+  +internal
+    
+    /* left (main)        
+    .panel-col-first
+      background-color: #fff
+      
+      .inside
+        margin: 0
+        
+        
+    /* right
+    .panel-col-last
+      
+      .inside
+            
+      h2
+        +sidebar_header
+  
+/* Bookmarks
+.flag-wrapper
+  display: block
+  width: 70px 
+  
+  a
+    float: right
+    
+    &.flag-action
+      +fontawe_buttonize_r(bookmark, 42px, 43px, 18px, #fff, false, $grey, darken($grey, 15%), true)
+      
+    &.unflag-action
+      +fontawe_buttonize_r(bookmark, 42px, 43px, 18px, #fff, false, $teal, darken($teal, 15%), true)
+  
+  .flag-message
+    top: 10px
+  
+  .flag-unflagged-message
+    //+fontawe_buttonize_r(minus, 42px, 43px, 18px, #fff, false, $grey, darken($grey, 15%), true)
+    +fontawe_r(minus-sign, 24px, 24px, #d80000)
+    
+  .flag-flagged-message
+    +fontawe_r(plus-sign, 24px, 24px, #12AF0E)
+    
+    
+
+/*  Sidebar Second Region
+/*.........................
+#region-sidebar-second
+  +f(alt)
+  
+  .block
+    .content
+      ul  
+        +list-clear()
+  
+  /* secondary menu
+  #block-menu-block-1,
+  #block-menu-menu-anonymous-user-menu
+    +s(sidebar_menu)
+            
+          
+  
+/*-------------------------
+/*  Postscript zone
+/*-------------------------
+
+#zone-postscript-wrapper
+
+#zone-postscript
+  
+/*  Postscript First Region
+/*.........................
+#region-postscript-first
+
+
+/*  Postscript Second Region
+/*.........................
+#region-postscript-second
+
+
+/*  Postscript Third Region
+/*.........................
+#region-postscript-third
+
+/*  Postscript Fourth Region
+/*.........................
+#region-postscript-forth
+
+
+/*-------------------------
+/*  Twitter Block
+/*-------------------------
+.block-twitter-0
+  h2.block-title
+    +f(upper)
+    +c(green)
+    font-size: 1em
+    left: gw(1, true, true)
+    position: absolute
+    
+  .twitter-pull-block-header
+    background: #fff
+    position: absolute
+    left: 0
+    height: 42px
+    +rounded(21px, false)
+    width: 42px
+    
+    a
+      +fontawe_r(twitter, 27px, 23px, #25aae1, #25aae1)
+      $local_margin: (42px - 25px) / 2
+      margin: $local_margin 0 0 $local_margin
+
+    
+  .tweets-pulled-listing
+    h2
+      font-size: 1em
+      font-weight: normal
+      margin-left: gw(1, true, true)
+      padding-top: 25px
+      
+      a
+        color: $text_color
+  
+  .tweet-divider,
+  .tweet-authorphoto,
+  .tweet-author,
+  .tweet-time
+    +s(hide)
+    
+    
+/**************************
+/*  FOOTER SECTION
+/**************************/
+
+#section-footer
+  overflow: hidden
+
+
+/*-------------------------
+/*  Footer zone
+/*-------------------------
+
+#zone-footer-wrapper
+  background-color: $grey_dark
+  border-bottom-color: $grey_darkest
+  border-bottom-style: solid
+  position: relative
+  
+  div, a
+    +c(white)
+
+#zone-footer
+
+
+/*  Footer First Region
+/*.........................
+#region-footer-first
+  padding: 10px 0 35px 0
+
+  /*main menu in footer
+  .menu-name-main-menu
+    &> ul.menu
+      +list-clear()
+
+      &> li
+        &> a
+          +f(upper)
+          display: block
+          line-height: 50px
+          height: 50px
+          
+  /* sign up block
+  .block-webform
+    h2.block-title
+      +f(upper)
+      +c(white)
+      font-size: 1em
+      margin-bottom: 20px
+      
+    form
+      +inline-form-submit
+  
+  
+  /* social Links        
+  .block-reach-social-blocks
+    position: absolute
+    right: 0
+    
+    ul.links
+      +list_float()
+       
+      li
+        margin: 0 15px 0 0
+        
+        &.last
+          margin-right : 0
+        
+        a
+          height: 33px
+          overflow: hidden
+          padding-left: 1px
+          width: 30px
+          
+        &.twitter  
+          a
+            +fontawe_buttonize(twitter, 18px, #fff, false, $grey_darkest, darken($grey_darkest, 15%), false)
+            
+        &.facebook
+          a
+            +fontawe_buttonize(facebook, 18px, #fff, false, $grey_darkest, darken($grey_darkest, 15%), false)
+      
+
+/*  Footer Second Region
+/*.........................
+#region-footer-second
+  .region-inner
+    position: absolute
+  
+  p
+    margin: 0
+    
+              
+/**************************
+/*  NODES
+/**************************/   
+.node
+        
+  /*-------------------------
+  /*  Full node
+  /*-------------------------
+  &.node-full
+    
+  /*-------------------------
+  /*  Teaser node
+  /*-------------------------
+  &.node-teaser
+  
+  /*-------------------------
+  /*  Search node
+  /*-------------------------
+  &.view-mode-search_teaser
+    margin-bottom: 50px!important
+        
+    .field-name-title 
+      margin-bottom: 20px
+      
+    .field-name-search-node-separator
+      +b(dot)
+      display: block
+      height: 20px
+      margin-top: 50px
+      
+      .views-row-last &
+        display: none
+      
+
+/*-------------------------
+/*  Blog node + Panels Blog
+/*-------------------------
+body.node-type-blog #block-system-main,
+.node-blog
+ 
+  /* date source
+  .field-name-date-with-author-or-source
+    margin-bottom: 20px
+  
+  .date-separator
+    margin: 0 10px    
+  
+  &.view-mode-mini_teaser
+    .field-name-title
+    
+  ul.links
+    li
+      &.node-readmore
+        +s(hide)
+        
+  .field-name-field-tags
+    +s(hide)
+
+
+/*-------------------------
+/*  Form node + Panels BForm
+/*-------------------------      
+body.node-type-form 
+  #block-system-main
+    .pane-node-body
+      margin-bottom: 50px
+      
+    .pane-node-webform
+      +s(content_external)
+      +single-box-shadow(rgba(0,0,0,0.1), 0, 2px, 4px, 0px)
+      padding: 20px 0 0 0
+      background-color: #fbfbfb
+      
+      .form-item
+      
+      .form-actions
+        border-top: 1px solid #dedede
+        margin-top: 35px
+        padding-top: 20px
+        padding-bottom: 25px
+        
+        .form-submit
+          margin: 0 auto
+          float: none
+          width: 48%
+          
+
+
+/*-------------------------
+/*  Research nodes + Panels Research
+/*-------------------------
+body.node-type-research-nonprofit #block-system-main,
+.node-research-nonprofit,
+body.node-type-research-political #block-system-main,
+.node-research-political
+  .pane-node-links
+    float: right
+    width: 70px
+  
+  .pane-page-title
+    padding-right: 100px
+    color: $teal
+  
+  /* date source
+  .field-name-post-date,
+  .pane-node-created
+    margin-bottom: 20px
+    
+  .field-name-body
+    margin-bottom: 35px
+    
+  /* file display
+  .field-name-field-research-files
+    .field-item
+      margin-bottom: 20px
+    
+    img
+      +s(hide)
+      
+    a
+      +fontawe_buttonize(download, 18px, #fff, false, $green_light, darken($green_light, 15%), true)
+      //+fontawe_s(, 26px, $green_light)
+      display: block
+      height: 45px
+      line-height: 45px
+      
+  /* file downloads
+  .pane-node-field-download 
+    a
+      +buttonize(auto, 40px, 1em, $teal)
+      display: inline-block
+      +fontawe_s(download, 26px, #fff)
+      padding: 0 10px 0 15px
+      
+      &:before
+        float: right
+        line-height: 45px
+        padding-left: 20px
+
+  
+      
+/*-------------------------
+/*  Page node
+/*-------------------------
+.node-page
+ 
+ 
+/**************************
+/*  PANELS
+/**************************/
+
+/* Panels team members      
+.pane-bundle-person
+  .field field-name-pane-uuid-anchor
+    position: absolute
+    top: 0
+  
+  .field-name-field-position
+    margin-bottom: 1.65em
+  
+
+.pane-bundle-quick-links.buttonize
+  min-height: $b_link_h + 2
+  margin-bottom: 5px
+
+/* Panels "side bar"
+.panel-col-last
+  .panel-pane
+    ul
+      +list-clear()
+      
+      #block-system-main &
+        padding-left: 0
+    
+    .item-list
+      padding-left: 10px
+  
+#block-system-main
+  .panel-separator
+    margin: 0
+
+/**************************
+/*  BLOCKS
+/**************************/
+
+.block
+
+  /*-------------------------
+  /*  Custom Blocks
+  /*-------------------------
+  &.block-block
+
+
+    
+         
+/**************************
+/*  FRONT PAGES (EXTERNAL + INTERNAL)
+/**************************/
+
+body.front,
+body.internal-front-page
+    
+  #zone-content
+    margin: 0
+    width: 100%
+    
+    /* remove grid for content
+    .grid-12
+      margin: 0
+      width: 100%
+    
+  /* center messages + top level panes 
+  .pane-page-messages,
+  .panel-pane.pane-panels-mini > .pane-content
+    display: block
+    float: none
+    padding: 0 gut(1)
+      
+  .panel-pane,
+  .view-slideshow-widget
+    position: relative
+    
+  /* inner panes
+  .pane-title + .pane-content
+    padding-top: 80px
+      
+  .pane-title
+    background: $grey_dark
+    +c(white)
+    +f(upper)
+    display: inline-block
+    height: 50px
+    line-height: 50px
+    padding: 0 20px
+    top: -25px
+    position: absolute
+    
+  
+  /* Panels slideshow widget  
+  .pane-external-home-page-research,
+  .pane-internal-home-page-research
+     
+      
+    .field-name-field-slideshow-link
+      font-size: 24px
+      font-weight: bold
+      margin-bottom: 10px
+    
+    .field-name-field-date
+      margin-bottom: 30px
+      
+    /* login text
+    .pane-custom.pane-2
+      color: $link
+    
+    /* panel separator after login text
+    .pane-custom.pane-2 + .panel-separator
+      clear: both
+    
+    /* slide pager
+    .views-slideshow-controls-bottom
+      position: absolute
+      z-index: 10
+      
+      .views_slideshow_pager_field_item
+        background-color: $grey_dark
+        cursor: pointer
+        text-indent: -9000px
+        
+        &.active
+          background-color: $grey_darkest
+      
+
+
+      
+  .buttonize .pane-content a
+    +buttonize(auto, $b_link_h, 1em, $grey_darkest)
+    float: right
+    margin-left: gut(2)
+    padding: 0 20px
+      
+
+     
+/**************************
+/* EXTERNAL FRONT PAGE 
+/**************************/        
+
+body.front
+  #zone-branding-wrapper,
+  #zone-menu-wrapper
+    +s(hide)
+    
+  #zone-content
+    background-color: $grey_darkest
+    
+  /* "the map is changing" section
+  .pane-external-home-page-header
+    color: $link
+    
+    /* "the map is changing" text
+    h2
+      +c(white)
+      font-size: 48px
+      margin: 115px 0 25px 0
+      $default-text-shadow-color: #000
+      $default-text-shadow-h-offset: 1px
+      $default-text-shadow-v-offset: 1px
+      $default-text-shadow-blur: 5px
+      $default-text-shadow-spread: false
+      +single-text-shadow()
+      
+    .pane-bundle-quick-links
+      padding-top: 10px
+  
+  /* Panels slideshow widget  
+  .pane-external-home-page-research
+    background-color: $grey_darker
+    +c(white)
+    
+    .pane-bundle-quick-links
+      float: right
+    
+    /* latest blog section    
+  .pane-external-home-page-latest
+    background-color: #fff
+    
+  &.logged-in
+    .pane-bundle-quick-links.login-link
+      display: none
+    
+    
+/**************************
+/* INTERNAL FRONT PAGE 
+/**************************/
+
+body.internal-front-page
+
+  #section-content
+    padding-top: 60px
+
+  #zone-content-wrapper,
+  #zone-content
+    background: none
+    
+  /* Panels slideshow widget  
+  .pane-internal-home-page-research
+    background-color: #fff
+    padding-bottom: 40px
+    
+    .view-slideshow-widget
+      .view-header
+        height: 80px
+        
+        h2
+          span
+            display: none
+        
+      .view-content
+        position: relative
+        
+ 
+  &.admin-user
+    .pane-internal-home-page-research
+      &> .pane-content
+        padding-bottom: 0!important
+      
+      .view-slideshow-widget
+        padding-bottom: 65px
+          
+        h2
+          span
+            display: inline
+
+  /* Panels latest research   
+  .pane-internal-home-page-latest
+    .view-mode-mini_teaser
+      +s(content_internal)
+      background-color: #fff
+
+
+
+/**************************
+/* ABOUT PAGE STAFF LISTINGS
+/**************************/   
+.view-about-page-staff-members
+  .view-mode-contact_team_member_view
+    .field-name-contact-name-first-last-
+      color: $teal
+      font-weight: bold
+      font-size: 1.7em
+      margin-bottom: 0.25em
+
+    .field-name-field-position
+      margin-bottom: 1.65em
+      
+  .pane-views-panes &
+    .form-actions
+      display: none
+      
+  .attachment-before
+    a
+      width: 110px
+
+      
+      
+/**************************
+/* BLOG LISTINGS AND BLOG POSTS 
+/**************************/      
+body.context-latest,
+body.alternate-content-layout.node-type-blog
+  /* exposed forms
+  #views-exposed-form-search-api-blog-list-panel-pane-1,
+  #views-exposed-form-search-api-blog-list-panel-pane-2
+    .views-widget-filter-field_blog_category
+      +s(sidebar_menu_other)
+      
+      label
+        +s(hide)
+        
+    .views-widget-filter-field_blog_category_tid
+      +s(hide)
+      
+  .panel-display .pane-page-title h2
+    margin-bottom: 0.25em
+      
+  
+  #region-sidebar-second
+    #block-menu-block-1
+      +s(hide)
+        
+    .block-views
+      position: relative
+      
+    .views-widget-filter-field_tags_tid label,
+    h2.block-title
+      +f(upper)
+      +c(black)
+      font-size: 1em
+      margin-bottom: 20px
+      
+    .views-row
+      margin-bottom: 30px
+      
+      &.views-row-last
+        margin-bottom: 0px  
+      
+    .block
+      margin-bottom: 50px
+      
+      &:first-child
+        margin-bottom: 0
+    
+
+
+/**************************
+/* BLOG LISTING
+/**************************/      
+body.context-latest
+
+
+
+/**************************
+/* BLOG POSTS 
+/**************************/  
+
+body.alternate-content-layout.node-type-blog
+  #region-content
+    .region-content-inner
+      +s(content_external)
+      background-color: #fff!important
+      
+      
+/********************************
+/* RESEARCH LISTING AND BOOKMARKS AND NODES
+/*******************************/
+body.page-research-bookmarks,
+body.page-research-database,
+body.node-type-research-political,
+body.node-type-research-nonprofit
+  #region-preface-first
+    
+    .block
+      form
+        
+        .views-exposed-form
+        
+        label
+          +c(black)
+          +f(upper)
+          margin-bottom: 0.25em
+          
+        .views-exposed-widget
+          padding-right: 0
+          margin: 0 3%
+          
+          select[multiple]
+            height: 100px
+            
+            option
+              padding-bottom: 0.5em
+              
+          .select2-choices
+            input
+              height: auto
+          
+          .select2-search-choice
+            div
+              font-size: 0.8em  
+          
+          &#edit-type-wrapper
+            margin-right: 0
+          
+          &.views-submit-button
+            margin-left: 0
+            float: right
+            width: auto
+            
+            .form-submit
+              +buttonize(auto, $input_h, 1em, $green_light)
+              margin-top: 2.15em
+            
+  .pane-research-panel-pane-1,
+  .pane-flag-bookmarks-panel-pane-1,
+  .pane-bookmarks-panel-pane-1
+    .views-row
+      position: relative
+     
+
+        
+/********************************
+/* RESEARCH LISTING AND BOOKMARKS ONLY
+/*******************************/
+body.page-research-bookmarks,
+body.page-research-database
+  /* Bookmarks
+  .flag-wrapper
+    position: absolute
+    right: 20px
+    top: 24px     
+
+
+/**************************
+/* SEARCH PAGE
+/**************************/
+body.page-search
+  #region-branding,
+  #region-menu
+    #views-exposed-form-full-site-search-panel-pane-1
+      display: none
+  
+  .view-full-site-search
+    .view-header
+      color: $grey_darker
+      font-weight: bold
+      margin-bottom: 30px
+      
+  &.logged-in
+    .view-empty
+      span.anonymous-message
+        display: none
+        
+  #region-sidebar-second
+    .block
+      margin-bottom: 30px
+      
+      h2.block-title 
+        +sidebar_header
+        line-height: 1.4em
+        margin: 0 10px 5px 5px
+        
+      .facetapi-facetapi-links
+        padding-left: 10px
+      
+      
+  
+  #views-exposed-form-full-site-search-panel-pane-1
+    +inline-form-submit
+    position: relative
+    padding-bottom: 110px
+    
+    .views-widget-filter-search_api_views_fulltext
+      padding: 0
+  
+    .views-widget-sort-by,
+    .views-widget-sort-order
+      bottom: 0
+      position: absolute
+      padding: 0
+      width: 50%
+      
+      label
+        +sidebar_header
+        margin: 0 10px 5px 0
+        line-height: 1.4em
+      
+      .form-item
+        float: none
+        padding-left: 5px
+      
+    .views-widget-sort-by
+      left: 0
+      
+      
+    .views-widget-sort-order
+      right: 0
+    
+  
