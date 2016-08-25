@@ -414,6 +414,6 @@ function pna_users_form_password_policy_password_tab_alter(&$form, $form_state) 
   $form['msg'] = array(
     '#type' => 'markup',
     '#weight' => -100,
-    '#markup' => t('Your password has expired. Please create a new password below. Note that your new password must be at least 8 characters long and contain an letter, number, digit and punctuation character.'),
+    '#markup' => t('<p>Your password has expired. Please create a new password below. Note that your new password must be at least 8 characters long and contain an letter, number, digit and punctuation character.</p><p><a href="/user/password">Request a new password</a>.</p>'),
   );
 }
