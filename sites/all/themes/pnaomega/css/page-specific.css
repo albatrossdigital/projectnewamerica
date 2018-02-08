@@ -1,14 +1,15 @@
-/* line 52, icons/*.png */
+/* line 56, icons/*.png */
 .icons-sprite, .icons-facebook, .icons-twitter {
-  background: url('../images/icons-sf21d8d09e9.png') no-repeat; }
+  background-image: url('../images/icons-se95eef046e.png');
+  background-repeat: no-repeat; }
 
-/* line 63, /var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../../../../private/var/folders/dt/8l2klrb54037dvx017gpvgnw0000gn/T/AppTranslocation/6AB7CF2D-94FE-4C8A-BDD1-25C16A8E2AA2/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook {
-  background-position: 0 -78px; }
-
-/* line 63, /var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-twitter {
   background-position: 0 0; }
+
+/* line 84, ../../../../../../../../../../private/var/folders/dt/8l2klrb54037dvx017gpvgnw0000gn/T/AppTranslocation/6AB7CF2D-94FE-4C8A-BDD1-25C16A8E2AA2/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -81px; }
 
 /* Main sprite function assumes text is being replaced */
 /* Helper sprite does background position */

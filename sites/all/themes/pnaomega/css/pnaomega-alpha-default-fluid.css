@@ -1,12 +1,13 @@
-/* line 270, ../../../../all/themes/reach_core/sass/_mixins.sass */
+@charset "UTF-8";
+/* line 270, ../../reach_core/sass/_mixins.sass */
 #region-menu .block-views h2.block-title:before, #page #region-menu .block-views h2.block-title:before {
-  content: "\f002"; }
+  content: ""; }
 
-/* line 796, ../../../../all/themes/reach_core/sass/_mixins.sass */
+/* line 796, ../../reach_core/sass/_mixins.sass */
 #region-user-first #block-superfish-1 h2.block-title:before {
-  content: "\f0c9"; }
+  content: ""; }
 
-/* line 898, ../../../../all/themes/reach_core/sass/_mixins.sass */
+/* line 898, ../../reach_core/sass/_mixins.sass */
 #region-user-first #block-superfish-1 h2.block-title:before, #region-menu .block-views h2.block-title:before, #page #region-menu .block-views h2.block-title:before {
   font-family: FontAwesome !important;
   font-weight: normal !important;
@@ -15,17 +16,18 @@
   text-decoration: inherit !important;
   vertical-align: middle !important; }
 
-/* line 52, icons/*.png */
+/* line 56, icons/*.png */
 .icons-sprite, .icons-facebook, .icons-twitter {
-  background: url('../images/icons-sf21d8d09e9.png') no-repeat; }
+  background-image: url('../images/icons-se95eef046e.png');
+  background-repeat: no-repeat; }
 
-/* line 63, ../../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+/* line 84, ../../../../../../../../../../private/var/folders/dt/8l2klrb54037dvx017gpvgnw0000gn/T/AppTranslocation/6AB7CF2D-94FE-4C8A-BDD1-25C16A8E2AA2/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
 .icons-facebook {
-  background-position: 0 -78px; }
-
-/* line 63, ../../../../../../../../../../../var/lib/gems/1.8/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-twitter {
   background-position: 0 0; }
+
+/* line 84, ../../../../../../../../../../private/var/folders/dt/8l2klrb54037dvx017gpvgnw0000gn/T/AppTranslocation/6AB7CF2D-94FE-4C8A-BDD1-25C16A8E2AA2/d/compass.app/Contents/Resources/lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -81px; }
 
 /* Main sprite function assumes text is being replaced */
 /* Helper sprite does background position */
@@ -52,14 +54,14 @@ body.node-type-research-nonprofit #region-preface-first .block h2.block-title {
 
 /* line 309, ../sass/_mixins.sass */
 #region-user-first #block-superfish-1 h2.block-title {
-  color: white; }
+  color: #fff; }
 
 /* line 312, ../sass/_mixins.sass */
 body.page-research-bookmarks.mobile-research-filter-open #region-preface-first .block h2.block-title,
 body.page-research-database.mobile-research-filter-open #region-preface-first .block h2.block-title,
 body.node-type-research-political.mobile-research-filter-open #region-preface-first .block h2.block-title,
 body.node-type-research-nonprofit.mobile-research-filter-open #region-preface-first .block h2.block-title {
-  color: black; }
+  color: #000; }
 
 /* line 315, ../sass/_mixins.sass */
 body.node-type-blog #block-system-main.node-teaser .field-name-taxonomy-alter-for-blog-listing,
@@ -102,7 +104,7 @@ body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .views-row,
 body.node-type-research-nonprofit .pane-flag-bookmarks-panel-pane-1 .view-empty,
 body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .views-row,
 body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .view-empty {
-  border: 1px solid #ebebeb; }
+  border: 1px solid #EBEBEB; }
 
 /* line 350, ../sass/_mixins.sass */
 body.not-front.external-section #page #region-content .region-content-inner, body.alternate-content-layout.node-type-blog #page #region-content .region-content-inner {
@@ -118,7 +120,7 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
   position: relative;
   padding-bottom: 100px; }
 
-/* */
+/** */
 /* line 8, ../sass/pnaomega-alpha-default-fluid.sass */
 #page .grid-1, #page .grid-2, #page .grid-3, #page .grid-4, #page .grid-5, #page .grid-6, #page .grid-7, #page .grid-8, #page .grid-9, #page .grid-10,
 #page .grid-11, #page .grid-12, #page .grid-13, #page .grid-14, #page .grid-15, #page .grid-16, #page .grid-17, #page .grid-18, #page .grid-19,
@@ -135,19 +137,19 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
 html {
   font-family: "mobile"; }
 
-/************************* */
+/************************** */
 /*  PAGE ELEMENTS */
-/************************ */
+/************************* */
 /* line 30, ../sass/pnaomega-alpha-default-fluid.sass */
 .page-element {
   /* logo */ }
 
-/************************* */
+/************************** */
 /*  PAGE */
-/************************ */
 /************************* */
+/************************** */
 /*  HEADER SECTION */
-/************************ */
+/************************* */
 /*------------------------- */
 /*  User zone */
 /*------------------------- */
@@ -165,7 +167,7 @@ html {
     line-height: 27px;
     line-height: 45px;
     font-size: 1em; }
-    /* line 924, ../../../../all/themes/reach_core/sass/_mixins.sass */
+    /* line 924, ../../reach_core/sass/_mixins.sass */
     #region-user-first #block-superfish-1 h2.block-title:before {
       font-size: 18px; }
     /* line 77, ../sass/pnaomega-alpha-default-fluid.sass */
@@ -223,7 +225,7 @@ html {
 /*------------------------- */
 /* line 150, ../sass/pnaomega-alpha-default-fluid.sass */
 .mobile-search-open #zone-menu-wrapper {
-  background: black; }
+  background: #000; }
 
 /*  Menu Region */
 /*......................... */
@@ -284,26 +286,22 @@ html {
         text-transform: uppercase;
         text-decoration: none;
         width: 18px;
-        background: #282e36;
-        color: white;
+        background: #b5d3fb;
+        color: #FFFFFF;
         text-align: center;
         border: 1px solid false;
-        color: white;
-        background-color: #333a45;
+        color: #FFF;
+        background-color: #cde1fc;
         *zoom: 1;
-        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF333A45', endColorstr='#FF1D2227');
-        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzMzM2E0NSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWQyMjI3Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+        filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FFCDE1FC', endColorstr='#FF9DC5FA');
+        background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NkZTFmYyIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjOWRjNWZhIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOWRjNWZhIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
         background-size: 100%;
-        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #333a45), color-stop(50%, #1d2227), color-stop(100%, #1d2227));
-        background-image: -webkit-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
-        background-image: -moz-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
-        background-image: -o-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
-        background-image: -ms-linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
-        background-image: linear-gradient(#333a45, #1d2227 50%, #1d2227 100%);
-        -webkit-border-radius: 3px;
+        background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #cde1fc), color-stop(50%, #9dc5fa), color-stop(100%, #9dc5fa));
+        background-image: -moz-linear-gradient(#cde1fc, #9dc5fa 50%, #9dc5fa 100%);
+        background-image: -webkit-linear-gradient(#cde1fc, #9dc5fa 50%, #9dc5fa 100%);
+        background-image: linear-gradient(#cde1fc, #9dc5fa 50%, #9dc5fa 100%);
         -moz-border-radius: 3px;
-        -ms-border-radius: 3px;
-        -o-border-radius: 3px;
+        -webkit-border-radius: 3px;
         border-radius: 3px;
         border-radius: 3px;
         display: inline-block;
@@ -311,32 +309,32 @@ html {
         line-height: 21px;
         margin-top: -3px;
         margin-right: 21px;
-        -webkit-box-shadow: #07090a 0px 0px 0px 1px;
-        -moz-box-shadow: #07090a 0px 0px 0px 1px;
-        box-shadow: #07090a 0px 0px 0px 1px; }
-        /* line 164, ../../../../all/themes/reach_core/sass/_mixins.sass */
+        -moz-box-shadow: #6ca8f7 0px 0px 0px 1px;
+        -webkit-box-shadow: #6ca8f7 0px 0px 0px 1px;
+        box-shadow: #6ca8f7 0px 0px 0px 1px; }
+        /* line 164, ../../reach_core/sass/_mixins.sass */
         #region-menu .block-views h2.block-title:before:hover {
           text-decoration: none; }
         /* line 204, ../sass/_mixins.sass */
         #region-menu .block-views h2.block-title:before:hover {
-          background: #282e36; }
-      /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
+          background: #b5d3fb; }
+      /* line 931, ../../reach_core/sass/_mixins.sass */
       #region-menu .block-views h2.block-title:before {
         font-size: 18px;
-        color: white; }
-      /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
+        color: #fff; }
+      /* line 931, ../../reach_core/sass/_mixins.sass */
       #page #region-menu .block-views h2.block-title:before {
         font-size: 18px;
-        color: white; }
+        color: #fff; }
       /* line 210, ../sass/pnaomega-alpha-default-fluid.sass */
       #page #region-menu .block-views h2.block-title:before {
         margin: -8px 0 0 0; }
       /* line 213, ../sass/pnaomega-alpha-default-fluid.sass */
       .mobile-search-open #region-menu .block-views h2.block-title {
-        background-color: black; }
+        background-color: #000; }
     /* line 217, ../sass/pnaomega-alpha-default-fluid.sass */
     #region-menu .block-views .content {
-      background-color: black;
+      background-color: #000;
       clear: both;
       height: 60px;
       position: absolute;
@@ -353,12 +351,12 @@ html {
           display: none; }
       /* line 237, ../sass/pnaomega-alpha-default-fluid.sass */
       #region-menu .block-views .content .form-item-search-terms input {
-        -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         height: 33px;
-        color: black;
-        background: white !important;
+        color: #000;
+        background: #fff !important;
         padding: 0 10px;
         -moz-border-radius-topright: 0px;
         -webkit-border-top-right-radius: 0px;
@@ -373,8 +371,8 @@ html {
         width: 20%; }
         /* line 255, ../sass/pnaomega-alpha-default-fluid.sass */
         #region-menu .block-views .content .views-submit-button .form-submit {
-          -webkit-box-sizing: border-box;
           -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
           box-sizing: border-box;
           display: block;
           height: 33px;
@@ -386,26 +384,22 @@ html {
           text-transform: uppercase;
           text-decoration: none;
           width: auto;
-          background: #65cab5;
-          color: white;
+          background: #65CAB5;
+          color: #FFFFFF;
           text-align: center;
           border: 1px solid #339681;
-          color: white;
+          color: #FFF;
           background-color: #78d1be;
           *zoom: 1;
           filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
-          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjUwJSIgeTE9IjAlIiB4Mj0iNTAlIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+          background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
           background-size: 100%;
           background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
-          background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
           background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-          background-image: -o-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-          background-image: -ms-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+          background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
           background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-          -webkit-border-radius: 3px;
           -moz-border-radius: 3px;
-          -ms-border-radius: 3px;
-          -o-border-radius: 3px;
+          -webkit-border-radius: 3px;
           border-radius: 3px;
           border-radius: 3px;
           -moz-border-radius-topleft: 0px;
@@ -417,12 +411,12 @@ html {
           margin: 0;
           padding: 0;
           width: 100%; }
-          /* line 164, ../../../../all/themes/reach_core/sass/_mixins.sass */
+          /* line 164, ../../reach_core/sass/_mixins.sass */
           #region-menu .block-views .content .views-submit-button .form-submit:hover {
             text-decoration: none; }
           /* line 204, ../sass/_mixins.sass */
           #region-menu .block-views .content .views-submit-button .form-submit:hover {
-            background: #65cab5; }
+            background: #65CAB5; }
 
 /*------------------------- */
 /*  Header zone */
@@ -431,9 +425,9 @@ html {
 /*......................... */
 /*  Header Second Region */
 /*......................... */
-/************************* */
+/************************** */
 /*  CONTENT SECTION */
-/************************ */
+/************************* */
 /*------------------------- */
 /*  Preface zone */
 /*------------------------- */
@@ -455,8 +449,8 @@ body.not-front.external-section #page #zone-content {
 body.not-front.external-section #page #region-sidebar-first,
 body.not-front.external-section #page #region-sidebar-second,
 body.not-front.external-section #page #region-content {
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 10px;
   padding-right: 10px;
@@ -464,12 +458,12 @@ body.not-front.external-section #page #region-content {
   width: 100%; }
 /* line 339, ../sass/pnaomega-alpha-default-fluid.sass */
 body.not-front.external-section #page #region-content {
-  background: white;
+  background: #fff;
   float: left;
   padding-bottom: 100px; }
   /* line 344, ../sass/pnaomega-alpha-default-fluid.sass */
   body.not-front.external-section #page #region-content .region-content-inner {
-    background: white;
+    background: #fff;
     margin-top: -60px; }
 
 /*  Sidebar First Region */
@@ -485,7 +479,7 @@ body.html #page #zone-content #region-content .pane-page-messages {
   /* reset to default to blog nodes */ }
   /* line 366, ../sass/pnaomega-alpha-default-fluid.sass */
   body.alternate-content-layout.node-type-blog #page #region-content .region-content-inner {
-    background-color: white; }
+    background-color: #fff; }
 
 /*  Sidebar Second Region */
 /*......................... */
@@ -518,9 +512,9 @@ body.html #page #zone-content #region-content .pane-page-messages {
   .block-twitter-0 .tweets-pulled-listing li {
     margin-bottom: 30px; }
 
-/************************* */
+/************************** */
 /*  FOOTER SECTION */
-/************************ */
+/************************* */
 /*------------------------- */
 /*  Footer zone */
 /*------------------------- */
@@ -564,12 +558,12 @@ body.html #page #zone-content #region-content .pane-page-messages {
 #region-footer-second .block {
   line-height: 40px; }
 
-/************************* */
+/************************** */
 /* MAIN MENU */
-/************************ */
 /************************* */
+/************************** */
 /*  NODES */
-/************************ */
+/************************* */
 /* line 500, ../sass/pnaomega-alpha-default-fluid.sass */
 .node {
   /*------------------------- */
@@ -631,24 +625,24 @@ body.node-type-blog #block-system-main .pane-disqus-disqus-comments,
 body.node-type-form #block-system-main .pane-node-webform .form-item {
   margin: 10px 20px; }
 
-/************************* */
+/************************** */
 /*  DISPLAY SUITE */
-/************************ */
+/************************* */
 /* line 588, ../sass/pnaomega-alpha-default-fluid.sass */
 .ds-2col .group-left,
 .ds-2col .group-right {
   clear: none; }
 
 /* 3 column layout */
-/************************* */
+/************************** */
 /*  VIEWS */
-/************************ */
 /************************* */
+/************************** */
 /* MENUS */
-/************************ */
 /************************* */
+/************************** */
 /*  PANELS */
-/************************ */
+/************************* */
 /* Panels team members */
 /* line 618, ../sass/pnaomega-alpha-default-fluid.sass */
 .pane-bundle-person {
@@ -663,22 +657,23 @@ body.node-type-form #block-system-main .pane-node-webform .form-item {
   /* reset columns */ }
   /* line 632, ../sass/pnaomega-alpha-default-fluid.sass */
   .panel-display .panel-2col .panel-col-first,
-  .panel-display .panel-2col .panel-col-last, .panel-display.panel-2col-stacked .panel-col-first, .panel-display.panel-2col-stacked .panel-col-last {
+  .panel-display .panel-2col .panel-col-last, .panel-display.panel-2col-stacked .panel-col-first,
+  .panel-display.panel-2col-stacked .panel-col-last {
     float: none;
     width: 100%; }
 
-/************************* */
+/************************** */
 /*  BLOCKS */
-/************************ */
+/************************* */
 /* line 642, ../sass/pnaomega-alpha-default-fluid.sass */
 .block {
   /*------------------------- */
   /*  Custom Blocks */
   /*------------------------- */ }
 
-/************************* */
+/************************** */
 /*  FRONT PAGES (EXTERNAL + INTERNAL) */
-/************************ */
+/************************* */
 /* line 655, ../sass/pnaomega-alpha-default-fluid.sass */
 body.front,
 body.internal-front-page {
@@ -762,7 +757,7 @@ body.internal-front-page {
         text-transform: uppercase;
         text-decoration: none;
         width: 40px; }
-        /* line 164, ../../../../all/themes/reach_core/sass/_mixins.sass */
+        /* line 164, ../../reach_core/sass/_mixins.sass */
         body.front .pane-external-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover,
         body.front .pane-internal-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover,
         body.internal-front-page .pane-external-home-page-research .views-slideshow-controls-bottom .views_slideshow_pager_field_item:hover,
@@ -793,9 +788,9 @@ body.internal-front-page {
   body.internal-front-page .pane-internal-home-page-latest .node .field-name-body {
     height: auto !important; }
 
-/************************* */
+/************************** */
 /* EXTERNAL FRONT PAGE */
-/************************ */
+/************************* */
 /* line 726, ../sass/pnaomega-alpha-default-fluid.sass */
 body.front {
   /* "the map is changing" section */ }
@@ -826,17 +821,17 @@ body.front {
   body.front .pane-bundle-quick-links.login-link {
     display: none; }
 
-/************************* */
+/************************** */
 /* BLOG LISTINGS AND BLOG POSTS */
-/************************ */
+/************************* */
 /* line 767, ../sass/pnaomega-alpha-default-fluid.sass */
 body.context-latest .view-search-api-blog-list .view-empty,
 body.alternate-content-layout.node-type-blog .view-search-api-blog-list .view-empty {
   min-height: 300px; }
 
-/******************************* */
+/******************************** */
 /* RESEARCH LISTING AND BOOKMARKS */
-/***************************** */
+/****************************** */
 /* line 775, ../sass/pnaomega-alpha-default-fluid.sass */
 body.page-research-bookmarks,
 body.page-research-database,
@@ -848,7 +843,7 @@ body.node-type-research-nonprofit {
   body.page-research-database #zone-content,
   body.node-type-research-political #zone-content,
   body.node-type-research-nonprofit #zone-content {
-    background: white;
+    background: #fff;
     padding-top: 10px; }
   /* line 787, ../sass/pnaomega-alpha-default-fluid.sass */
   body.page-research-bookmarks #region-preface-first .block h2.block-title,
@@ -963,9 +958,9 @@ body.node-type-research-nonprofit {
   body.node-type-research-nonprofit .pane-bookmarks-panel-pane-1 .views-field-title {
     padding-right: 95px; }
 
-/************************* */
+/************************** */
 /* SEARCH PAGE */
-/************************ */
+/************************* */
 /* line 854, ../sass/pnaomega-alpha-default-fluid.sass */
 body.page-search #zone-content {
   padding-top: 25px !important; }
