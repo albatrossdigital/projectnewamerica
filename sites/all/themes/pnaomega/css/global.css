@@ -535,7 +535,7 @@ form {
       width: 31px; }
       /* line 258, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
       .item-list ul.pager li.pager-next a:hover:before {
-        background: #282e36; }
+        background: #b5d3fb; }
       /* line 261, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
       .item-list ul.pager li.pager-next a:before {
         display: block;
@@ -548,7 +548,7 @@ form {
         text-transform: uppercase;
         text-decoration: none;
         width: 30px;
-        background: #282e36;
+        background: #b5d3fb;
         color: white;
         text-align: center;
         border: 1px solid true;
@@ -581,7 +581,7 @@ form {
           text-decoration: none; }
         /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
         .item-list ul.pager li.pager-next a:before:hover {
-          background: #282e36; }
+          background: #b5d3fb; }
       /* line 931, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
       #page .item-list ul.pager li.pager-next a:before {
         font-size: 15px;
@@ -595,7 +595,7 @@ form {
       width: 31px; }
       /* line 258, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
       .item-list ul.pager li.pager-previous a:hover:before {
-        background: #282e36; }
+        background: #b5d3fb; }
       /* line 261, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
       .item-list ul.pager li.pager-previous a:before {
         display: block;
@@ -608,7 +608,7 @@ form {
         text-transform: uppercase;
         text-decoration: none;
         width: 30px;
-        background: #282e36;
+        background: #b5d3fb;
         color: white;
         text-align: center;
         border: 1px solid true;
@@ -641,7 +641,7 @@ form {
           text-decoration: none; }
         /* line 204, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/_mixins.sass */
         .item-list ul.pager li.pager-previous a:before:hover {
-          background: #282e36; }
+          background: #b5d3fb; }
       /* line 931, /data/disk/v4709507421/static/platforms/albatross-7.15/sites/projectnewamerica.com/themes/pnaomega/sass/../../../../all/themes/reach_core/sass/_mixins.sass */
       #page .item-list ul.pager li.pager-previous a:before {
         font-size: 15px;
