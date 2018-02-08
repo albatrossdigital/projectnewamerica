@@ -284,7 +284,7 @@ html {
         text-transform: uppercase;
         text-decoration: none;
         width: 18px;
-        background: #b5d3fb;
+        background: #282e36;
         color: white;
         text-align: center;
         border: 1px solid false;
@@ -319,7 +319,7 @@ html {
           text-decoration: none; }
         /* line 204, ../sass/_mixins.sass */
         #region-menu .block-views h2.block-title:before:hover {
-          background: #b5d3fb; }
+          background: #282e36; }
       /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
       #region-menu .block-views h2.block-title:before {
         font-size: 18px;
