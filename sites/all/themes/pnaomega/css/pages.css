@@ -116,7 +116,7 @@ body.alternate-content-layout.node-type-blog #region-sidebar-second #block-menu-
 body.context-latest #views-exposed-form-search-api-blog-list-panel-pane-2 .views-widget-filter-field_blog_category ul li a,
 body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog-list-panel-pane-1 .views-widget-filter-field_blog_category ul li a,
 body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog-list-panel-pane-2 .views-widget-filter-field_blog_category ul li a, .block-twitter-0 h2.block-title {
-  color: #00a187; }
+  color: #6f83c1; }
 
 /* line 306, ../sass/_mixins.sass */
 #region-user-first .block-block .content {
@@ -401,7 +401,7 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
   min-height: 45px; }
   /* line 208, ../sass/_mixins.sass */
   body.external-section #zone-user-wrapper {
-    background-color: #0092d2; }
+    background-color: #0c4c91; }
   /* line 220, ../sass/_mixins.sass */
   body.internal-section #zone-user-wrapper {
     background-color: black; }
@@ -778,7 +778,7 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
     text-transform: uppercase;
     text-decoration: none;
     width: 18px;
-    background: #0092d2;
+    background: #0c4c91;
     color: white;
     text-align: center;
     border: 1px solid false;
@@ -813,7 +813,7 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
       text-decoration: none; }
     /* line 204, ../sass/_mixins.sass */
     #region-menu .block-menu-internal-menu ul.menu li.last a:before:hover {
-      background: #0092d2; }
+      background: #0c4c91; }
   /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
   #region-menu .block-menu-internal-menu ul.menu li.last a:before {
     font-size: 18px;
@@ -965,7 +965,7 @@ body.alternate-content-layout #page #region-content {
       width: 41px; }
       /* line 258, ../sass/_mixins.sass */
       .flag-wrapper a.unflag-action:hover:before {
-        background: #0092d2; }
+        background: #0c4c91; }
       /* line 261, ../sass/_mixins.sass */
       .flag-wrapper a.unflag-action:before {
         display: block;
@@ -978,7 +978,7 @@ body.alternate-content-layout #page #region-content {
         text-transform: uppercase;
         text-decoration: none;
         width: 40px;
-        background: #0092d2;
+        background: #0c4c91;
         color: white;
         text-align: center;
         border: 1px solid true;
@@ -1011,7 +1011,7 @@ body.alternate-content-layout #page #region-content {
           text-decoration: none; }
         /* line 204, ../sass/_mixins.sass */
         .flag-wrapper a.unflag-action:before:hover {
-          background: #0092d2; }
+          background: #0c4c91; }
       /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
       #page .flag-wrapper a.unflag-action:before {
         font-size: 18px;
@@ -1468,7 +1468,7 @@ body.node-type-research-political #block-system-main,
   body.node-type-research-political #block-system-main .pane-page-title,
   .node-research-political .pane-page-title {
     padding-right: 100px;
-    color: #0092d2; }
+    color: #0c4c91; }
   /* line 672, ../sass/pages.sass */
   body.node-type-research-nonprofit #block-system-main .field-name-post-date,
   body.node-type-research-nonprofit #block-system-main .pane-node-created,
@@ -1591,7 +1591,7 @@ body.node-type-research-political #block-system-main,
     text-transform: uppercase;
     text-decoration: none;
     width: auto;
-    background: #0092d2;
+    background: #0c4c91;
     color: white;
     text-align: center;
     border: 1px solid #004b6c;
@@ -1626,7 +1626,7 @@ body.node-type-research-political #block-system-main,
     .node-research-nonprofit .pane-node-field-download a:hover,
     body.node-type-research-political #block-system-main .pane-node-field-download a:hover,
     .node-research-political .pane-node-field-download a:hover {
-      background: #0092d2; }
+      background: #0c4c91; }
     /* line 931, ../../../../all/themes/reach_core/sass/_mixins.sass */
     body.node-type-research-nonprofit #block-system-main .pane-node-field-download a:before,
     .node-research-nonprofit .pane-node-field-download a:before,
@@ -1765,7 +1765,7 @@ body.internal-front-page {
     body.front .pane-internal-home-page-research .pane-custom.pane-2,
     body.internal-front-page .pane-external-home-page-research .pane-custom.pane-2,
     body.internal-front-page .pane-internal-home-page-research .pane-custom.pane-2 {
-      color: #00a187; }
+      color: #6f83c1; }
     /* line 824, ../sass/pages.sass */
     body.front .pane-external-home-page-research .pane-custom.pane-2 + .panel-separator,
     body.front .pane-internal-home-page-research .pane-custom.pane-2 + .panel-separator,
@@ -1852,7 +1852,7 @@ body.front {
     background-color: #282e36; }
   /* line 864, ../sass/pages.sass */
   body.front .pane-external-home-page-header {
-    color: #00a187;
+    color: #6f83c1;
     /* "the map is changing" text */ }
     /* line 868, ../sass/pages.sass */
     body.front .pane-external-home-page-header h2 {
@@ -1921,7 +1921,7 @@ body.internal-front-page {
 /************************ */
 /* line 954, ../sass/pages.sass */
 .view-about-page-staff-members .view-mode-contact_team_member_view .field-name-contact-name-first-last- {
-  color: #0092d2;
+  color: #0c4c91;
   font-weight: bold;
   font-size: 1.7em;
   margin-bottom: 0.25em; }
