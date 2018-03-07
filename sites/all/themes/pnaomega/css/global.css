@@ -674,7 +674,8 @@ ul.links li.google a {
 /*  QTIP */
 /************************* */
 
-
+.pane-uuid-45c2bea9-0614-14d4-d102-207f166614a1,
+.theme_hook_original,
 .page-home .pane-external-home-page-header .panel-col-last {
   display: none;
 }
@@ -686,10 +687,6 @@ ul.links li.google a {
 
 .page-home .pane-external-home-page-header .panel-col-first img {
   max-width: 400px;
-}
-
-.theme_hook_original {
-  display: none;
 }
 
 #zone-footer-wrapper {
