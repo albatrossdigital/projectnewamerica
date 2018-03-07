@@ -676,7 +676,7 @@ ul.links li.google a {
 
 
 .page-home .pane-external-home-page-header .panel-col-last {
-  /*display: none;*/
+  display: none;
 }
 
 .page-home .pane-external-home-page-header .panel-col-first {
