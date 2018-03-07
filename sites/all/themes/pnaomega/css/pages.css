@@ -122,7 +122,7 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
 
 /* line 306, ../sass/_mixins.sass */
 #region-user-first .block-block .content {
-  color: #65CAB5; }
+  color: #7384C8; }
 
 /* line 309, ../sass/_mixins.sass */
 #region-sidebar-second #block-menu-block-1 ul li span.active,
@@ -668,20 +668,20 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
     text-transform: uppercase;
     text-decoration: none;
     width: 18px;
-    background: #65CAB5;
+    background: #7384C8;
     color: #FFFFFF;
     text-align: center;
     border: 1px solid false;
     color: #FFF;
-    background-color: #78d1be;
+    background-color: #7889D0;
     *zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
+    filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#7889D0', endColorstr='#FF7889D0');
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
     background-size: 100%;
-    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
-    background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-    background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-    background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7889D0), color-stop(50%, #7889D0), color-stop(100%, #7889D0));
+    background-image: -moz-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+    background-image: -webkit-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+    background-image: linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     border-radius: 3px;
@@ -699,7 +699,7 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
       text-decoration: none; }
     /* line 204, ../sass/_mixins.sass */
     #region-menu .block-menu-internal-menu ul.menu li a:before:hover {
-      background: #65CAB5; }
+      background: #7384C8; }
   /* line 931, ../../reach_core/sass/_mixins.sass */
   #region-menu .block-menu-internal-menu ul.menu li a:before {
     font-size: 18px;
@@ -1173,20 +1173,20 @@ body.alternate-content-layout #page #region-content {
       text-transform: uppercase;
       text-decoration: none;
       width: auto;
-      background: #65CAB5;
+      background: #7384C8;
       color: #FFFFFF;
       text-align: center;
-      border: 1px solid #339681;
+      border: 1px solid #0F4285;
       color: #FFF;
-      background-color: #78d1be;
+      background-color: #7889D0;
       *zoom: 1;
-      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#7889D0', endColorstr='#FF7889D0');
       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
       background-size: 100%;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
-      background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7889D0), color-stop(50%, #7889D0), color-stop(100%, #7889D0));
+      background-image: -moz-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: -webkit-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
@@ -1205,7 +1205,7 @@ body.alternate-content-layout #page #region-content {
       /* line 204, ../sass/_mixins.sass */
       #region-footer-first .block-webform form .form-actions .form-submit:hover,
       #region-footer-first .block-webform form .views-submit-button .form-submit:hover {
-        background: #65CAB5; }
+        background: #7384C8; }
   /* line 530, ../sass/pages.sass */
   #region-footer-first .block-reach-social-blocks {
     position: absolute;
@@ -1478,7 +1478,7 @@ body.node-type-research-political #block-system-main,
     .node-research-nonprofit .field-name-field-research-files a:hover:before,
     body.node-type-research-political #block-system-main .field-name-field-research-files a:hover:before,
     .node-research-political .field-name-field-research-files a:hover:before {
-      background: #65CAB5; }
+      background: #7384C8; }
     /* line 230, ../sass/_mixins.sass */
     body.node-type-research-nonprofit #block-system-main .field-name-field-research-files a:before,
     .node-research-nonprofit .field-name-field-research-files a:before,
@@ -1494,20 +1494,20 @@ body.node-type-research-political #block-system-main,
       text-transform: uppercase;
       text-decoration: none;
       width: 18px;
-      background: #65CAB5;
+      background: #7384C8;
       color: #FFFFFF;
       text-align: center;
       border: 1px solid true;
       color: #FFF;
-      background-color: #78d1be;
+      background-color: #7889D0;
       *zoom: 1;
-      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#7889D0', endColorstr='#FF7889D0');
       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
       background-size: 100%;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
-      background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7889D0), color-stop(50%, #7889D0), color-stop(100%, #7889D0));
+      background-image: -moz-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: -webkit-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
@@ -1531,7 +1531,7 @@ body.node-type-research-political #block-system-main,
       .node-research-nonprofit .field-name-field-research-files a:before:hover,
       body.node-type-research-political #block-system-main .field-name-field-research-files a:before:hover,
       .node-research-political .field-name-field-research-files a:before:hover {
-        background: #65CAB5; }
+        background: #7384C8; }
     /* line 931, ../../reach_core/sass/_mixins.sass */
     body.node-type-research-nonprofit #block-system-main .field-name-field-research-files a:before,
     .node-research-nonprofit .field-name-field-research-files a:before,
@@ -2019,20 +2019,20 @@ body.node-type-research-nonprofit #region-preface-first .block form .views-expos
       text-transform: uppercase;
       text-decoration: none;
       width: auto;
-      background: #65CAB5;
+      background: #7384C8;
       color: #FFFFFF;
       text-align: center;
-      border: 1px solid #339681;
+      border: 1px solid #0F4285;
       color: #FFF;
-      background-color: #78d1be;
+      background-color: #7889D0;
       *zoom: 1;
-      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#7889D0', endColorstr='#FF7889D0');
       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
       background-size: 100%;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
-      background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7889D0), color-stop(50%, #7889D0), color-stop(100%, #7889D0));
+      background-image: -moz-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: -webkit-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
@@ -2049,7 +2049,7 @@ body.node-type-research-nonprofit #region-preface-first .block form .views-expos
       body.page-research-database #region-preface-first .block form .views-exposed-widget.views-submit-button .form-submit:hover,
       body.node-type-research-political #region-preface-first .block form .views-exposed-widget.views-submit-button .form-submit:hover,
       body.node-type-research-nonprofit #region-preface-first .block form .views-exposed-widget.views-submit-button .form-submit:hover {
-        background: #65CAB5; }
+        background: #7384C8; }
 /* line 1094, ../sass/pages.sass */
 body.page-research-bookmarks .pane-research-panel-pane-1 .views-row,
 body.page-research-bookmarks .pane-flag-bookmarks-panel-pane-1 .views-row,
@@ -2141,20 +2141,20 @@ body.page-search #views-exposed-form-full-site-search-panel-pane-1 {
       text-transform: uppercase;
       text-decoration: none;
       width: auto;
-      background: #65CAB5;
+      background: #7384C8;
       color: #FFFFFF;
       text-align: center;
-      border: 1px solid #339681;
+      border: 1px solid #0F4285;
       color: #FFF;
-      background-color: #78d1be;
+      background-color: #7889D0;
       *zoom: 1;
-      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF78D1BE', endColorstr='#FF52C3AC');
+      filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#7889D0', endColorstr='#FF7889D0');
       background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc4ZDFiZSIvPjxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNTJjM2FjIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
       background-size: 100%;
-      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #78d1be), color-stop(50%, #52c3ac), color-stop(100%, #52c3ac));
-      background-image: -moz-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: -webkit-linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
-      background-image: linear-gradient(#78d1be, #52c3ac 50%, #52c3ac 100%);
+      background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #7889D0), color-stop(50%, #7889D0), color-stop(100%, #7889D0));
+      background-image: -moz-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: -webkit-linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
+      background-image: linear-gradient(#7889D0, #7889D0 50%, #7889D0 100%);
       -moz-border-radius: 3px;
       -webkit-border-radius: 3px;
       border-radius: 3px;
@@ -2173,7 +2173,7 @@ body.page-search #views-exposed-form-full-site-search-panel-pane-1 {
       /* line 204, ../sass/_mixins.sass */
       body.page-search #views-exposed-form-full-site-search-panel-pane-1 .form-actions .form-submit:hover,
       body.page-search #views-exposed-form-full-site-search-panel-pane-1 .views-submit-button .form-submit:hover {
-        background: #65CAB5; }
+        background: #7384C8; }
   /* line 1150, ../sass/pages.sass */
   body.page-search #views-exposed-form-full-site-search-panel-pane-1 .views-widget-filter-search_api_views_fulltext {
     padding: 0; }
