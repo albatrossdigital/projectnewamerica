@@ -691,9 +691,9 @@ body.alternate-content-layout.node-type-blog #views-exposed-form-search-api-blog
     line-height: 21px;
     margin-top: -3px;
     margin-right: 21px;
-    -moz-box-shadow: #3aa992 0px 0px 0px 1px;
-    -webkit-box-shadow: #3aa992 0px 0px 0px 1px;
-    box-shadow: #3aa992 0px 0px 0px 1px; }
+    -moz-box-shadow: #0F4285 0px 0px 0px 1px;
+    -webkit-box-shadow: #0F4285 0px 0px 0px 1px;
+    box-shadow: #0F4285 0px 0px 0px 1px; }
     /* line 164, ../../reach_core/sass/_mixins.sass */
     #region-menu .block-menu-internal-menu ul.menu li a:before:hover {
       text-decoration: none; }
@@ -1517,9 +1517,9 @@ body.node-type-research-political #block-system-main,
       line-height: 21px;
       margin-top: -3px;
       margin-right: 21px;
-      -moz-box-shadow: #3aa992 0px 0px 0px 1px;
-      -webkit-box-shadow: #3aa992 0px 0px 0px 1px;
-      box-shadow: #3aa992 0px 0px 0px 1px; }
+      -moz-box-shadow: #0F4285 0px 0px 0px 1px;
+      -webkit-box-shadow: #0F4285 0px 0px 0px 1px;
+      box-shadow: #0F4285 0px 0px 0px 1px; }
       /* line 164, ../../reach_core/sass/_mixins.sass */
       body.node-type-research-nonprofit #block-system-main .field-name-field-research-files a:before:hover,
       .node-research-nonprofit .field-name-field-research-files a:before:hover,

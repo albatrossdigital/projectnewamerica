@@ -676,10 +676,22 @@ ul.links li.google a {
 
 
 .page-home .pane-external-home-page-header .panel-col-last {
-  display: none;
+  /*display: none;*/
 }
 
 .page-home .pane-external-home-page-header .panel-col-first {
   width: 100% !important;
   text-align: center;
+}
+
+.page-home .pane-external-home-page-header .panel-col-first img {
+  max-width: 400px;
+}
+
+.theme_hook_original {
+  display: none;
+}
+
+#zone-footer-wrapper {
+  border-bottom-color: #0F4285;
 }
