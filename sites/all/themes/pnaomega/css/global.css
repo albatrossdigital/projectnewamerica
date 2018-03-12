@@ -692,3 +692,7 @@ ul.links li.google a {
 #zone-footer-wrapper {
   border-bottom-color: #0F4285;
 }
+
+body.front #zone-content {
+  background-color: #ebebeb !important;
+}
