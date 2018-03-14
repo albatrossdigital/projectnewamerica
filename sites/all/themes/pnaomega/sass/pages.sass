@@ -1173,4 +1173,44 @@ body.page-search
     .views-widget-sort-order
       right: 0
     
-  
+
+
+
+
+/**************************
+/*  MAJORITY INSTITUTE CHANGES
+/*************************
+
+.mini-panel-external_home_page_header, .theme_hook_original
+  display: none
+
+.page-home .pane-external-home-page-header
+  .panel-col-last
+    display: none
+  .panel-col-first
+    width: 100% !important
+    text-align: center
+    img
+      max-width: 400px
+
+#zone-footer-wrapper
+  border-bottom-color: #0F4285
+
+body.front #zone-content
+  background-color: #ebebeb !important
+
+@media (max-width: 599px)
+  body
+    &.front
+      #zone-content
+        padding-top: 20px !important
+      .pane-page-messages, .panel-pane.pane-panels-mini > .pane-content
+        padding-bottom: 30px !important
+    &.internal-front-page
+      .pane-page-messages, .panel-pane.pane-panels-mini > .pane-content
+        padding-bottom: 30px !important
+    &.front #zone-content .pane-bundle-image-media
+      width: 100% !important
+      height: 80px !important
+      background-size: auto 80px
+      background-position: center !important

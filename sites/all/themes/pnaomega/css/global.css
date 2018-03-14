@@ -697,3 +697,21 @@ ul.links li.google a {
 body.front #zone-content {
   background-color: #ebebeb !important;
 }
+
+@media (max-width: 599px) {
+
+  body.front #zone-content {
+    padding-top: 20px !important;
+  }
+  body.front .pane-page-messages, body.front .panel-pane.pane-panels-mini > .pane-content, body.internal-front-page .pane-page-messages, body.internal-front-page .panel-pane.pane-panels-mini > .pane-content {
+    padding-bottom: 30px !important;
+  }
+
+  body.front #zone-content .pane-bundle-image-media {
+    width: 100% !important;
+    height: 80px !important;
+    background-size: auto 80px;
+    background-position: center !important;
+  }
+}
+
